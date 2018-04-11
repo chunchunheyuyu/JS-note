@@ -187,3 +187,83 @@ var  alice = {};
 toString方法不是对象alice自身的属性，而是继承的属性。但是，in运算符不能识别，对继承的属性也返回true。
 
 ### for   in 循环
+for...in循环用来遍历一个对象的全部属性。
+```
+var obj = { a:'gold',b:'wood',c:'water',d:'fire',e:'earth'}
+for ( var i in obj){
+console.log(obj[i])
+}
+```
+利用 for  in 循环  提取对象属性名
+```
+var obj = { a:'gold',b:'wood',c:'water',d:'fire',e:'earth'}
+var halu = [];
+var i = 0;
+for ( var l in obj){
+halu[i++] = l
+}
+console.log(halu)//(5) ["a", "b", "c", "d", "e"]
+```
+>它遍历的是对象所有可遍历的属性，会跳过不可遍历的属性。
+它不仅遍历对象自身的属性，还遍历继承的属性。
+
+
+如果继承的属性是可遍历的，那么就会被for...in循环遍历到。
+如果继承的属性是不可遍历的，那么就不会被for...in循环遍历到。
+
+
+- 使用for...in的时候，应该结合使用**hasOwnProperty**方法，在循环内部判断一下，某个属性是否为对象自身的属性。
+```
+var obj = { a:'gold',b:'wood',c:'water',d:'fire',e:'earth'}
+for ( var key in obj){
+      if(obj.hasOwnProperty(key)){
+     console.log(obj[key])
+    }
+}
+
+```
+###with 语句
+with语句的格式如下：
+```
+with (对象) {
+  语句;
+}
+```
+它的作用是操作同一个对象的多个属性时，提供一些书写的方便
+```
+// 例一
+var obj = {
+  p1: 1,
+  p2: 2,
+};
+with (obj) {
+  p1 = 4;
+  p2 = 5;
+}
+// 等同于
+obj.p1 = 4;
+obj.p2 = 5;
+
+// 例二
+with (document.links[0]){
+  console.log(href);
+  console.log(title);
+  console.log(style);
+}
+// 等同于
+console.log(document.links[0].href);
+console.log(document.links[0].title);
+console.log(document.links[0].style);
+```
+**注意**，如果with区块内部有变量的赋值操作，必须是当前对象已经存在的属性，否则会创造一个当前作用域的全局变量。
+
+建议不要使用with语句，可以考虑用一个临时变量代替with
+```
+with(obj1.obj2.obj3) {
+  console.log(p1 + p2);
+}
+
+// 可以写成
+var temp = obj1.obj2.obj3;
+console.log(temp.p1 + temp.p2);
+```
