@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 ### js三千问
 =======
 ### $javascript概念部分
->>>>>>> 93adb03178b5d31307119c67a9db6d8cce4f6bc2
+
 - DOM元素e的e.getAttribute(propName)和e.propName有什么区别和联系
 - offsetWidth/offsetHeight,clientWidth/clientHeight与scrollWidth/scrollHeight的区别
 - XMLHttpRequest通用属性和方法
@@ -11,6 +10,8 @@
 - sessionStorage,localStorage,cookie区别
 - javascript跨域通信
 - javascript有哪几种数据类型
+>原始类型:布尔值boolean、字符串 string、数字number、undefined、null   、es6新类型symbol 独一无二的值
+复杂类型：object对象    es6
 - 什么闭包,闭包有什么用
 - javascript有哪几种方法定义函数
 - 应用程序存储和离线web应用
@@ -26,11 +27,9 @@
 - 函数内部arguments变量有哪些特性,有哪些属性,如何将它转换为数组
 - DOM事件模型是如何的,编写一个EventUtil工具类实现事件管理兼容
 - 评价一下三种方法实现继承的优缺点,并改进
-<<<<<<< HEAD
+
 ###$javascript编程部分
-=======
-### $javascript编程部分
->>>>>>> 93adb03178b5d31307119c67a9db6d8cce4f6bc2
+
 - 请用原生js实现一个函数,给页面制定的任意一个元素添加一个透明遮罩(透明度可变,默认0.2),使这个区域点击无效,要求兼容IE8+及各主流浏览器,遮罩层效果如下图所示:
 - 请用代码写出(今天是星期x)其中x表示当天是星期几,如果当天是星期一,输出应该是"今天是星期一"
 - 下面这段代码想要循环延时输出结果0 1 2 3 4,请问输出结果是否正确,如果不正确,请说明为什么,并修改循环内的代码使其输出正确结果
@@ -57,4 +56,4 @@
 - 有一个大数组,var a = ['1', '2', '3', ...];a的长度是100,内容填充随机整数的字符串.请先构造此数组a,然后设计一个算法将其内容去重
 =======
 - 有一个大数组,var a = ['1', '2', '3', ...];a的长度是100,内容填充随机整数的字符串.请先构造此数组a,然后设计一个算法将其内容去重
->>>>>>> 93adb03178b5d31307119c67a9db6d8cce4f6bc2
+
