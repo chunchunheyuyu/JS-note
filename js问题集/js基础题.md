@@ -48,7 +48,7 @@ var longString = 'Long '
 + 'long '
 + 'string';
 
-法二
+法二  
 var longString = "Long \
 long \
 long \
@@ -57,3 +57,48 @@ string";
 longString
 // "Long long long string"
 ```
+- 3、补全如下代码,让输出结果为字符串: hello\\NARUTO
+
+```
+var str ='hello\\\\NARUTO'
+    console.log(str) // 在字符串中显示反斜杠，在反斜杠前再加一个\ ，即可对其转义
+```
+- 4以下代码输出什么?为什么
+```
+var str = 'waa\n哈哈'
+console.log(str.length)// \n 占一个字符
+```
+
+5、写一个函数，判断一个字符串是回文字符串，如 abcdcba是回文字符串, abcdcbb不是
+```
+function a(str) {
+
+    if(typeof  str =='string'){
+        var fan = str.split('').reverse().join('')
+        if(str === fan){
+            return  console.log('str是回文字符串')
+        } return   console.log('str不是回文字符串')
+    }
+    return console.log('非字符串无法判断')
+	```
+	
+6、写一个函数，统计字符串里出现出现频率最多的字符
+7、写一个camelize函数，把my-short-string形式的字符串转化成myShortString形式的字符串，如
+```
+function camlize(str){
+   return str.split('-').join('')
+}
+```
+8、写一个 ucFirst函数，返回第一个字母为大写的字符 （***）
+```
+function a(str){
+    var a = str.split('');
+   a.splice(0,1,str[0].toUpperCase())
+    return a.join('')
+
+
+}
+console.log(a("naruto") )
+```
+
+
