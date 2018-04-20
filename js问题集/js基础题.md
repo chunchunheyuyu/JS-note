@@ -82,14 +82,39 @@ function a(str) {
     return console.log('非字符串无法判断')
 	```
 	
-6、写一个函数，统计字符串里出现出现频率最多的字符
-7、写一个camelize函数，把my-short-string形式的字符串转化成myShortString形式的字符串，如
+- 6、写一个函数，统计字符串里出现出现频率最多的字符
+```
+function most(str) {
+	//传入了一个字符串,遍历一个这个字符串
+	//创建一个对象，将字符串的个数都存入到这个对象中
+	var dist ={}
+	for (var i=0; i<str.length; i++) {
+		
+		if (dist[str[i]]) {	
+			dist[str[i]]++//后面出现一个 加一
+		}else {
+		  dist[str[i]] = 1;//这个字符第一次出现
+		}
+	}
+	var count = 0;
+	var mostChar;
+	for (var key in dist) {
+		if (dist[key] > count) {
+			count = dist[key];
+			mostChar = key;
+		}
+	}
+
+	return mostChar+':'+count
+}
+```
+- 7、写一个camelize函数，把my-short-string形式的字符串转化成myShortString形式的字符串，如
 ```
 function camlize(str){
    return str.split('-').join('')
 }
 ```
-8、写一个 ucFirst函数，返回第一个字母为大写的字符 （***）
+- 8、写一个 ucFirst函数，返回第一个字母为大写的字符 （***）
 ```
 function a(str){
     var a = str.split('');
@@ -100,5 +125,31 @@ function a(str){
 }
 console.log(a("naruto") )
 ```
+- 9、写一个函数truncate(str, maxlength), 如果str的长度大于maxlength，会把str截断到maxlength长，并加上...，如
+
+```
+function truncate(str,maxlength) {
+    var len =str.length;
+
+    if(len > maxlength ){
+       str =str.slice(0,maxlength) +'...'
+
+    }
+        return str;
+}
+var a = 'sdsdsdaffffffffffffffff'
+console.log(truncate(a,5))//sdsds...
+```
+- 10、什么是 json？什么是 json 对象？什么是 json 对象字面量？什么是 JSON内置对象？
+json是一种轻量级的数据交换格式.
+
+json的对象由key,value组成,类似js的对象,但有所不同,比如在json对象里string用单引号是
+不行的,对象的值必须是string,number,null,true,false,object,arry中的一种,这里的object是
+狭义上的object不是函数,时间,正则等对象.
+
+json对象字面量是一种简单的声明生成json的方式.
+
+json对象有两个静态函数,一个用于把字符串变成json对象,另一个用于把json对象变成字符串,分别是JSON.parse()和JSON.stringify().
+
 
 
