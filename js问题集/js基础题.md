@@ -71,7 +71,7 @@ console.log(str.length)// \n 占一个字符
 
 5、写一个函数，判断一个字符串是回文字符串，如 abcdcba是回文字符串, abcdcbb不是
 ```
-function a(str) {
+function isPalindrome(str) {
 
     if(typeof  str =='string'){
         var fan = str.split('').reverse().join('')
@@ -84,29 +84,26 @@ function a(str) {
 	
 - 6、写一个函数，统计字符串里出现出现频率最多的字符
 ```
-function most(str) {
-	//传入了一个字符串,遍历一个这个字符串
-	//创建一个对象，将字符串的个数都存入到这个对象中
-	var dist ={}
-	for (var i=0; i<str.length; i++) {
-		
-		if (dist[str[i]]) {	
-			dist[str[i]]++//后面出现一个 加一
-		}else {
-		  dist[str[i]] = 1;//这个字符第一次出现
-		}
-	}
-	var count = 0;
-	var mostChar;
-	for (var key in dist) {
-		if (dist[key] > count) {
-			count = dist[key];
-			mostChar = key;
-		}
-	}
-
-	return mostChar+':'+count
+function getMostFreq(str) {
+  var dict = {}
+  var max = 0
+  var maxCh 
+  for(var i = 0; i < str.length; i++) {
+    var ch = str[i]
+    if(dict[ch] === undefined) {
+      dict[ch] = 1
+    }else {
+      dict[ch]++
+    }
+    if(dict[ch] > max){
+      max = dict[ch]
+      maxCh = str[i]
+    }
+  }
+  return {index: max, ch: maxCh}
 }
+
+console.log(getMostFreq('helloooo worlddd'))
 ```
 - 7、写一个camelize函数，把my-short-string形式的字符串转化成myShortString形式的字符串，如
 ```
@@ -151,5 +148,191 @@ json对象字面量是一种简单的声明生成json的方式.
 
 json对象有两个静态函数,一个用于把字符串变成json对象,另一个用于把json对象变成字符串,分别是JSON.parse()和JSON.stringify().
 
+
+####Math对象
+- 1、写一个函数，返回从min到max之间的 随机整数，包括min不包括max 
+```
+function choose(min,max) {
+    return min+Math.floor(Math.random()*(max -min));
+
+}
+console.log(choose(3,111));
+```
+- 2、写一个函数，返回从min都max之间的 随机整数，包括min包括max 
+function choose(min,max) {
+    return min+Math.floor(Math.random()*(max -min+1));
+
+}
+console.log(choose(3,111));
+- 3、写一个函数，生成一个长度为 n 的随机字符串，字符串字符的取值范围包括0到9，a到 z，A到Z。
+```
+function randomLetter(n) {
+    var h= '';
+    var a ='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    for(var i=0;i<n;i++){
+
+        h +=a[Math.floor(Math.random()*(a.length +1))]
+    }
+    return h
+
+}
+console.log(randomLetter(3));
+```
+
+function getRandStr(len){
+  //补全函数
+}
+var str = getRandStr(10); // 0a3iJiRZap
+- 4、写一个函数，生成一个随机 IP 地址，一个合法的 IP 地址为 0.0.0.0~255.255.255.255
+function choose(min,max) {
+    return min+Math.floor(Math.random()*(max -min+1));
+
+}
+function getRandIP(){
+    var str =[];
+    for(var i=0;i<4;i++){
+        str[i]=choose(0,255)
+    }
+    return str.join('.')
+}
+
+- 5、写一个函数，生成一个随机颜色字符串，合法的颜色为#000000~ #ffffff
+
+```
+function choose(min,max) {
+    return min+Math.floor(Math.random()*(max -min+1));
+
+}
+
+function getRandIP(){
+    var str =[];
+    for(var i=0;i<4;i++){
+        str[i]=choose(0,255)
+        str[i]=str[i].toString(16)
+    }
+    return '#'+str.join('')
+}
+console.log(getRandIP())
+```
+
+###数组
+
+- 1、数组方法里push、pop、shift、unshift、join、splice分别是什么作用？用 splice函数分别实现push、pop、shift、unshift方法
+####push
+>push方法用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。
+```
+var arr = [1,2];
+
+arr.push() // [1]
+
+```
+####pop
+>pop方法用于在数组的末端删除一个或多个元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。
+```
+var arr = [];
+
+arr.pop(1) // 1
+arr.pop('a') // 2
+arr.pop(true, {}) // 4
+arr // [1, 'a', true, {}]
+```
+####shift
+>shift方法用于删除数组的第一个元素，并返回该元素。注意，该方法会改变原数组。
+```
+var arr = [2,3,4];
+
+arr.shift() // [3,4]
+2
+
+```
+shift方法可以遍历并清空一个数组。
+```
+var list = [1, 2, 3, 4, 5, 6];
+var item;
+
+while (item = list.shift()) {
+  console.log(item);
+}
+
+list // []
+```
+####unshift
+>unshift方法用于在数组的第一个位置添加元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。。
+unshift方法可以接受多个参数，这些参数都会添加到目标数组头部。
+```
+var arr = [ 'c', 'd' ];
+arr.unshift('a', 'b') // 4
+arr // [ 'a', 'b', 'c', 'd' ]
+```
+####join
+>join方法以指定参数作为分隔符，将所有数组成员连接为一个字符串返回。如果不提供参数，默认用逗号分隔。
+```
+var a = [1, 2, 3, 4];
+
+a.join(' ') // '1 2 3 4'
+a.join(' | ') // "1 | 2 | 3 | 4"
+a.join() // "1,2,3,4"
+//如果数组成员是undefined或null或空位，会被转成空字符串。
+
+[undefined, null].join('#')
+// '#'
+
+['a',, 'b'].join('-')
+// 'a--b'
+//通过call方法，这个方法也可以用于字符串或类似数组的对象。
+
+Array.prototype.join.call('hello', '-')
+// "h-e-l-l-o"
+
+var obj = { 0: 'a', 1: 'b', length: 2 };
+Array.prototype.join.call(obj, '-')
+// 'a-b'
+```
+####splice
+>splice方法用于删除原数组的一部分成员，并可以在删除的位置添加新的数组成员，返回值是被删除的元素。注意，该方法会改变原数组。
+```
+var arr = [];
+
+var a = ['a', 'b', 'c', 'd', 'e', 'f'];
+a.splice(4, 2) // ["e", "f"]
+a // ["a", "b", "c", "d"]
+```
+- 2、写一个函数，操作数组，数组中的每一项变为原来的平方，在原数组上操作
+
+function squareArr(arr){
+}
+var arr = [2, 4, 6]
+squareArr(arr)
+console.log(arr) // [4, 16, 36]
+- 3、写一个函数，操作数组，返回一个新数组，新数组中只包含正数，原数组不变
+
+function filterPositive(arr){
+}
+var arr = [3, -1,  2,  '饥人谷', true]
+var newArr = filterPositive(arr)
+console.log(newArr) //[3, 2]
+console.log(arr) //[3, -1,  2,  '饥人谷', true]
+Date 任务
+- 1、 写一个函数getChIntv，获取从当前时间到指定日期的间隔时间
+
+var str = getChIntv("2017-02-08");
+console.log(str);  // 距除夕还有 20 天 15 小时 20 分 10 秒
+- 2、把hh-mm-dd格式数字日期改成中文日期
+
+var str = getChsDate('2015-01-08');
+console.log(str);  // 二零一五年一月八日
+- 3、写一个函数，参数为时间对象毫秒数的字符串格式，返回值为字符串。假设参数为时间对象毫秒数t，根据t的时间分别返回如下字符串:
+
+刚刚（ t 距当前时间不到1分钟时间间隔）
+3分钟前 (t距当前时间大于等于1分钟，小于1小时)
+8小时前 (t 距离当前时间大于等于1小时，小于24小时)
+3天前 (t 距离当前时间大于等于24小时，小于30天)
+2个月前 (t 距离当前时间大于等于30天小于12个月)
+8年前 (t 距离当前时间大于等于12个月)
+function friendlyDate(time){
+}
+var str = friendlyDate( '1484286699422' ) //  1分钟前
+var str2 = friendlyDate('1483941245793') //4天前
+学习扩展
 
 
