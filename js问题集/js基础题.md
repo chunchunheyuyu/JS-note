@@ -314,25 +314,72 @@ console.log(newArr) //[3, 2]
 console.log(arr) //[3, -1,  2,  '饥人谷', true]
 Date 任务
 - 1、 写一个函数getChIntv，获取从当前时间到指定日期的间隔时间
+```
+var str = getChIntv("2018-03-20");
+function getChIntv(setTime) {
+    var curretTime = new Date();
+    var targetTime =new Date(setTime);
+    console.log(curretTime)
+    console.log(targetTime)
 
-var str = getChIntv("2017-02-08");
-console.log(str);  // 距除夕还有 20 天 15 小时 20 分 10 秒
+    var cha = Math.abs(curretTime - targetTime);
+    console.log(cha)
+    var chaS = Math.floor(cha/1000)
+    console.log(chaS)
+    var second = chaS%60;
+    var chaM =Math.floor(cha/1000/60)
+    var minute =chaM%60
+    var chaHours =Math.floor(chaM/60);
+    var hour =chaHours%24
+    var day =Math.floor(chaHours/24);
+  return  '距离还有'+day+'天'+hour+'小时'+minute+'分钟'+second+'秒'
+
+}
+console.log(str)
+```
+
+
 - 2、把hh-mm-dd格式数字日期改成中文日期
 
-var str = getChsDate('2015-01-08');
-console.log(str);  // 二零一五年一月八日
-- 3、写一个函数，参数为时间对象毫秒数的字符串格式，返回值为字符串。假设参数为时间对象毫秒数t，根据t的时间分别返回如下字符串:
+```
+function getChsDate(str) {
+	var dist = ["零","一","二","三","四","五","六","七","八","九","十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十","二十一","二十二","二十三","二十四","二十五","二十六","二十七","二十八","二十九","三十","三十一"];
+	var arr = str.split('-');
+	var year = arr[0];
+	var month = arr[1];
+	var day = arr[2];
 
-刚刚（ t 距当前时间不到1分钟时间间隔）
-3分钟前 (t距当前时间大于等于1分钟，小于1小时)
-8小时前 (t 距离当前时间大于等于1小时，小于24小时)
-3天前 (t 距离当前时间大于等于24小时，小于30天)
-2个月前 (t 距离当前时间大于等于30天小于12个月)
-8年前 (t 距离当前时间大于等于12个月)
+    var Chyear = dist[parseInt(year[0])] + dist[parseInt(year[1])] + dist[parseInt(year[2])] +dist[parseInt(year[3])] + '年';
+var Chmonth = dist[parseInt(month)] + '月';
+var Chday = dist[parseInt(day)] + '日';
+return Chyear + Chmonth + Chday ;
+}
+var str = getChsDate('2015-01-08');
+console.log(str);  
+```
+- 3、写一个函数，参数为时间对象毫秒数的字符串格式，返回值为字符串。假设参数为时间对象毫秒数t，根据t的时间分别返回如下字符串:
+```
 function friendlyDate(time){
+	var now = Date.now();
+	var offset = (now - parseInt(time)) / 1000 / 60; 
+	var result;
+	if ((offset / 60 / 24 / 30 / 12) >= 1 ) {
+	  result = parseInt(offset / 60 / 24 / 30 / 12) + "年前";
+	}else if ((offset / 60 / 24 / 30) >= 1  ) {
+      result = parseInt(offset / 60 / 24 / 30) + "个月前"; 
+	}else if ((offset / 60 / 24 ) >=1 ) {
+		result = parseInt(offset / 60 / 24) + "天前";
+	}else if ((offset / 60 ) >=1) {
+		result = parseInt(offset / 60 ) + "小时前";
+	}else if (offset >=1) {
+		result = parseInt(offset) + "分钟前";
+	}else if (offset <1) {
+		result = "刚刚";
+	}
+	return result;
 }
 var str = friendlyDate( '1484286699422' ) //  1分钟前
 var str2 = friendlyDate('1483941245793') //4天前
-学习扩展
+```
 
 
