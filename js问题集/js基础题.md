@@ -382,4 +382,69 @@ var str = friendlyDate( '1484286699422' ) //  1分钟前
 var str2 = friendlyDate('1483941245793') //4天前
 ```
 
+####DOM
+- 题目1： dom对象的innerText和innerHTML有什么区别？
+			innerText	: 获取的是节点中文本内容
+			innerHTML  :获取的是节点的标签及内容
+- 题目2： elem.children和elem.childNodes的区别？
+			childNodes返回的是节点的子节点集合，包括元素节点、文本节点还有属性节点等
+			children返回的只是节点的元素节点集合
+			
+- 题目3：查询元素有几种常见的方法？ES5的元素选择方法是什么?
+>getElementById()      //返回匹配指定ID属性的元素节点
+  getElementsByClassName() //返回一个类似数组的对象（HTMLCollection类型的对象） 
+  //元素的变化实时反映在返回结果中
+  getElementsByTagName() //返回所有指定标签的元素（搜索范围包括本身）。返回值是
+  //一个HTMLCollection对象，也就是说，搜索结果是一个动态集合，任何元素的变化都会
+  //实时反映在返回的集合中
+  getElementsByName()  //用于选择拥有name属性的HTML元素，比如form、img、frame、
+  //embed和object，返回一个NodeList格式的对象，不会实时反映元素的变化。
+   elementFromPoint()  //返回位于页面指定位置的元素。
+
+  ES5的元素选择方法：
+  querySelector()  //返回匹配指定的CSS选择器的元素节点。如果有多个节点满足匹配条件，
+  //则返回第一个匹配的节点。如果没有发现匹配的节点，则返回null。
+  querySelectorAll()  //返回匹配指定的CSS选择器的所有节点，返回的是NodeList类型的对象。
+  //NodeList对象不是动态集合，所以元素节点的变化无法实时反映在返回结果中。
+  //elementList = document.querySelectorAll(selectors);
+  //querySelectorAll方法的参数，可以是逗号分隔的多个CSS选择器，返回所有匹配
+  //其中一个选择器的元素。
+
+			
+- 题目4：如何创建一个元素？如何给元素设置属性？如何删除属性
+		createElement方法用来生成HTML元素节点
+setAttribute()方法用于设置元素属性
+removeAttribute()用于删除元素属性
+- 题目5：如何给页面元素添加子元素？如何删除页面元素下的子元素?
+appendChild()方法在元素末尾添加元素
+insertBefore()方法在某个元素之前插入元素
+removeChild()方法可用于删除某元素下的子元素
+replaceChild()接受两个参数：要插入的元素和要替换的元素
+- 题目6： element.classList有哪些方法？如何判断一个元素的 class 列表中是包含某个 class？如何添加一个class？如何删除一个class?
+add(class1, class2, ...) //在元素中添加一个或多个类名。如果指定的类名已存在，则不会添加
+toggle()支持一个类名字符串参数,若类名列表中有此类名，移除之，并返回false; 如果没有，则添加该类名，并返回true.
+contains(class): //返回布尔值，判断指定的类名是否存在
+classList.add(''):添加一个class
+classList.remove(''):删除一个class
+
+
+- 题目7： 如何选中如下代码所有的li元素？ 如何选中btn元素？
+```
+<div class="mod-tabs">
+   <ul>
+       <li>list1</li>
+       <li>list2</li>
+       <li>list3</li>
+   </ul>
+   <button class="btn">点我</button>
+</div>
+//选中所有的li元素
+document.getElementsByTagName('li')或document.querySelectorAll('li')
+
+//选中btn元素
+document.getElementsByClassName('btn')或
+getElementsByClassName('btn')
+document.querySelector('.btn')
+
+```
 
