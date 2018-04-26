@@ -448,3 +448,74 @@ document.querySelector('.btn')
 
 ```
 
+####事件模型
+- 题目1： DOM0 事件和DOM2级在事件监听使用方式上有什么区别？
+
+ html代码和JavaScript代码紧密耦合，维护不方便
+存在加载顺序问题，如果事件处理程序在html代码之后加载，用户可能在事件处理程序还未加载完成时就点击按钮之类的触发事件，存在时间差问题
+
+DOM2可以在一个节点多次绑定，易维护
+
+- 题目2： attachEvent与addEventListener的区别？
+1.参数个数不同    attachEvent 有2个  addEventListener 有3个
+2.首参数意义不同   attachEvent  事件处理函数名称   addEventListener  事件类型
+3.作用域不同    attachEvent 全局环境  Windows      addEventListener this是触发元素
+
+- 题目3： 解释IE事件冒泡和DOM2事件传播机制？
+
+IE   div-> body->html->document   冒泡阶段
+DOM2  1：document->html->body->div  捕获阶段    2:目标阶段  div-> body->html->document   3:冒泡阶段
+
+- 题目4：如何阻止事件冒泡？ 如何阻止默认事件？
+Event.preventDefault方法取消浏览器对当前事件的默认行为。
+比如点击链接后，浏览器默认会跳转到另一个页面，使用这个方法以后，就不会跳转了；
+再比如，按一下空格键，页面向下滚动一段距离，使用这个方法以后也不会滚动了。
+该方法生效的前提是，事件对象的cancelable属性为true，如果为false，调用该方法没有任何效果
+
+stopPropagation方法阻止事件在 DOM 中继续传播，防止再触发定义在别的节点上的监听函数，但是不包括在当前节点上其他的事件监听函数
+
+- 题目5：有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容
+
+<ul class="ct">
+    <li>这里是</li>
+    <li>饥人谷</li>
+    <li>前端6班</li>
+</ul>
+<script>
+ var ap = document.querySelectorAll('li');
+
+ ap.forEach(function (node) {
+     node.addEventListener('click',function (e) {
+         alert(e.target.innerText)
+
+     })
+
+ })
+</script>
+- 题目6： 补全代码，要求：
+
+当点击按钮开头添加时在<li>这里是</li>元素前添加一个新元素，内容为用户输入的非空字符串；当点击结尾添加时在最后一个 li 元素后添加用户输入的非空字符串.
+当点击每一个元素li时控制台展示该元素的文本内容。
+<ul class="ct">
+    <li>这里是</li>
+    <li>饥人谷</li>
+    <li>任务班</li>
+</ul>
+<input class="ipt-add-content" placeholder="添加内容"/>
+<button id="btn-add-start">开头添加</button>
+<button id="btn-add-end">结尾添加</button>
+<script>
+//你的代码
+</script>
+题目7： 补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。
+
+<ul class="ct">
+    <li data-img="1.png">鼠标放置查看图片1</li>
+    <li data-img="2.png">鼠标放置查看图片2</li>
+    <li data-img="3.png">鼠标放置查看图片3</li>
+</ul>
+<div class="img-preview"></div>
+<script>
+//你的代码
+</script>
+
