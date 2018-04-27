@@ -478,8 +478,8 @@ stopPropagation方法阻止事件在 DOM 中继续传播，防止再触发定义
 
 <ul class="ct">
     <li>这里是</li>
-    <li>饥人谷</li>
-    <li>前端6班</li>
+    <li>牛肉粉丝汤</li>
+    <li>干锅牛蛙</li>
 </ul>
 <script>
  var ap = document.querySelectorAll('li');
@@ -496,26 +496,96 @@ stopPropagation方法阻止事件在 DOM 中继续传播，防止再触发定义
 
 当点击按钮开头添加时在<li>这里是</li>元素前添加一个新元素，内容为用户输入的非空字符串；当点击结尾添加时在最后一个 li 元素后添加用户输入的非空字符串.
 当点击每一个元素li时控制台展示该元素的文本内容。
-<ul class="ct">
-    <li>这里是</li>
-    <li>饥人谷</li>
-    <li>任务班</li>
-</ul>
-<input class="ipt-add-content" placeholder="添加内容"/>
-<button id="btn-add-start">开头添加</button>
-<button id="btn-add-end">结尾添加</button>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body></body>
+    <ul class="ct">
+        <li>这里是</li>
+        <li>饥人谷</li>
+        <li>任务班</li>
+    </ul>
+    <input class="ipt-add-content" placeholder="添加内容"/>
+    <button id="btn-add-start">开头添加</button>
+    <button id="btn-add-end">结尾添加</button>
+</body>
 <script>
-//你的代码
+    var start = document.getElementById('btn-add-start');
+    var end = document.getElementById('btn-add-end');
+    var text =document.querySelector('.ipt-add-content')
+    var ali =document.querySelectorAll('li')
+    var aul =document.querySelector('.ct')
+    start.addEventListener('click',function () {
+            var node =document.createElement('li')
+            console.log(text.value)
+            node.innerText = text.value
+            aul.insertBefore(node,aul.firstChild)
+            text.value =''
+
+    })
+    end.addEventListener('click',function () {
+        var node =document.createElement('li')
+        console.log(text.value)
+        node.innerText = text.value
+        aul.appendChild(node)
+        text.value =''
+
+    })
+
+    aul.addEventListener('click',function (e) {
+        var target =e.target;
+        console.log(tar)
+
+    })
+
+
+
 </script>
+
+
+
+</script>
+```
 题目7： 补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
 <ul class="ct">
-    <li data-img="1.png">鼠标放置查看图片1</li>
-    <li data-img="2.png">鼠标放置查看图片2</li>
-    <li data-img="3.png">鼠标放置查看图片3</li>
+    <li data-img="https://ww3.sinaimg.cn/large/006tNc79gw1fbsvjwg3xhj30g00g03zk.jpg">鼠标放置查看图片1</li>
+    <li data-img="https://ww1.sinaimg.cn/large/006tNc79gw1fbsvkeqqlcj30an07c0sx.jpg">鼠标放置查看图片2</li>
+    <li data-img="https://ww4.sinaimg.cn/large/006tNc79gw1fbsvkyfq5qj30x60zw0wx.jpg">鼠标放置查看图片3</li>
 </ul>
 <div class="img-preview"></div>
+
+</body>
+
 <script>
-//你的代码
+    var aul = document.querySelector('.ct')
+    var image =document.createElement('img')
+    var aimg =document.querySelector('.img-preview')
+    image.src = '';
+    aimg.insertBefore(image,aimg.firstChild);
+    aul.addEventListener('mouseover',function (e) {
+        image.src = e.target.getAttribute('data-img')
+
+    })
+    aul.addEventListener('mouseout',function (e) {
+        image.src=''
+
+    })
+
+
+
+
+
 </script>
 
