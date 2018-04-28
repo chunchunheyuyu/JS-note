@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab切换-原生JS</title>
+    <style>
+        ul ,li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .head:after{
+            content: '';
+            display: block;
+            clear: both;
+
+        }
+        .tab{
+          display: inline-block;
+            text-align: center;
+            line-height: 200px;
+        }
+        .head>li.active{
+            background: #BB6688;
+
+        }
+        .head>li{
+            float: left;
+            height: 25px;
+            width: 25px;
+            line-height: 25px;
+            border: 2px yellowgreen solid;
+            text-align: center;
+            border-right: none;
+
+        }
+        .head>li:last-child{
+            border-right:2px yellowgreen solid ;
+        }
+        .content>li{
+            width: 106px;
+            height: 60px;
+            border: 2px yellowgreen solid;
+            border-top: none;
+            text-align: center;
+            line-height: 60px;
+            display: none;
+        }
+        .content>.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <ul class="head">
+            <li class="active">菩</li>
+            <li>明</li>
+            <li>本</li>
+            <li>何</li>
+        </ul>
+        <ul class="content">
+            <li>菩提本无树</li>
+            <li>明镜亦非台</li>
+            <li  class="active">本来无一物</li>
+            <li>何处惹尘埃</li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    var head =document.querySelectorAll('.head>li')
+    var content =document.querySelectorAll('.content>li')
+
+    head.forEach(function (e) {
+        e.addEventListener('click',function (v) {
+            head.forEach(function (node) {
+                node.classList.remove('active');//清除head中li所有active
+            })
+            content.forEach(function (b) {
+                b.classList.remove('active');//清除content中li所有active
+            })
+            this.classList.add('active')//当前点击添加 active
+
+            var index = [].indexOf.call(head,this)//通过call调用数值indexOf方法，获取当前li在head中键名
+            content[index].classList.add('active')//对应content添加active
+
+
+        })
+
+    })
+</script>
+</html>
