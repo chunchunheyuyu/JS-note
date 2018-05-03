@@ -551,7 +551,7 @@ stopPropagation方法阻止事件在 DOM 中继续传播，防止再触发定义
 </script>
 ```
 题目7： 补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -588,7 +588,123 @@ stopPropagation方法阻止事件在 DOM 中继续传播，防止再触发定义
 
 
 </script>
+```
+###题目1: 下面的代码输出多少？修改代码让 fnArr[i]() 输出 i。使用 两种以上的方法
+   
+   var fnArr = [];
+    for (var i = 0; i < 10; i ++) {
+        fnArr[i] =  function(){
+    	    return i;
+        };
+    }
+    console.log( fnArr[3]() );  //
+题目2： 封装一个汽车对象，可以通过如下方式获取汽车状态
+var Car = (function(){
+   var speed = 0;
+   function setSpeed(s){
+       speed = s
+   }
+   ...
+   return {
+      setSpeed: setSpeed,
+      ...
+   }
+})()
+Car.setSpeed(30);
+Car.getSpeed(); //30
+Car.accelerate();
+Car.getSpeed(); //40;
+Car.decelerate();
+Car.decelerate();
+Car.getSpeed(); //20
+Car.getStatus(); // 'running';
+Car.decelerate(); 
+Car.decelerate();
+Car.getStatus();  //'stop';
+//Car.speed;  //error
+题目3：下面这段代码输出结果是? 为什么?
+var a = 1;
+setTimeout(function(){
+    a = 2;
+    console.log(a);
+}, 0);
+var a ;
+console.log(a);
+a = 3;
+console.log(a);
+题目4：下面这段代码输出结果是? 为什么?
+```
+var flag = true;
+setTimeout(function(){//等待所有任务结束后执行
+    flag = false;
+},0)
+while(flag){} //setTimeout会等待它执行完毕，此时flag永远是true，无限循环。
+console.log(flag);  //不会执行
+```
+###题目5： 下面这段代码输出？如何输出delayer: 0, delayer:1...（使用闭包来实现）
+```
+for(var i=0;i<5;i++){
+	setTimeout(function(){
+         console.log('delayer:' + i );
+	}, 0);
+	console.log(i);
+}
+```
+```
+//立即执行函数
+    for(var i=0;i<5;i++){
+
+        !function(i){setTimeout(function(){
+            console.log('delayer:' + i );
+        }, 0);
+        console.log(i);}(i)
+    }
+```
+```
+//es6
+for(let i=0;i<5;i++){
+	setTimeout(function(){
+         console.log('delayer:' + i );
+	}, 0);
+	console.log(i);
+}
+```
+题目6： 如何获取元素的真实宽高
+```
+function trueStyle(element,pseduoElement){
+    //IE不支持window.getComputedStyle()，支持element.currentStyle();
+	return element.currentStyle ? element.currentStyle : window.getComputedStyle(element,pseduoElement);
+}
+let trueWidth = trueStyle(element).width;
+let trueHeight = trueStyle(element).height;
+```
+题目7： URL 如何编码解码？为什么要编码？
+```
+let myURL = 'https://www.google.com/#q=javascript';
+//如果我们想编码一个URL并且可以使用它（访问），使用encodeURI();
+let simpleURL = encodeURI(myURL); //"https://www.google.com/#q=javascript"
+//如果我们想编码一个URL并且可以将其放置在某URL的参数中，使用encodeURIComponent();
+let completeURL = encodeURIComponent(myURL);
+let newURL = 'https://www.google.com/?back=' + completeURL; //"https://www.google.com/?back=https%3A%2F%2Fwww.google.com%2F%23q%3Djavascript"
+window.open(simpleURL); //将会打开一个窗口，地址为https://www.google.com/#q=javascript
 
 
+```
+
+题目8： 补全如下函数，判断用户的浏览器类型
+```
+function isAndroid(){
+    return /Android/.test(navigator.userAgent);
+}
+funcnction isIphone(){
+    return /iPhone/.test(navigator.userAgent);
+}
+function isIpad(){
+    return /iPad/.test(navigator.userAgent);
+}
+function isIOS(){
+    return /(iPad)|(iPhone)/i.test(navigator.userAgent);
+}
+```
 
 
