@@ -1,710 +1,465 @@
-####js  基础题
+![Creative.jpg](https://upload-images.jianshu.io/upload_images/10758861-2867638f4d53eca8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
- ######字符串
-  - 1、使用数组拼接出如下字符串
- ```
-  var prod = {
-    name: '女装',
-    styles: ['短款', '冬季', '春装']
-};
-function getTpl(data){
-//todo...
-};
-var result = getTplStr(prod);  //result为下面的字符串
+###ajax 
 
-<dl class="product"><dt>女装</dt><dd>短款</dd<dd>冬季</dd><dd>春装</dd></dl>
+含义：AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML 通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
+
+作用：实现网页的异步加载，局部刷新网页。当在向服务器获取新数据时不需要刷新整个网页，提高用户体验。
+##历程
+ajax是一种技术方案，但并不是一种新技术。它依赖的是现有的CSS/HTML/Javascript，而其中最核心的依赖是浏览器提供的XMLHttpRequest对象，是这个对象使得浏览器可以发出HTTP请求与接收HTTP响应。
+
+**使用XMLHttpRequest对象来发送一个Ajax请求。**
+
+`XMLHttpRequest`一开始只是微软浏览器提供的一个接口，后来各大浏览器纷纷效仿也提供了这个接口，再后来W3C对它进行了标准化，提出了[`XMLHttpRequest`标准](https://www.w3.org/TR/XMLHttpRequest/)。`XMLHttpRequest`标准又分为`Level 1`和`Level 2`。
+
+`XMLHttpRequest Level 1`主要存在以下缺点：
+
+*   受同源策略的限制，不能发送跨域请求；
+
+*   不能发送二进制文件（如图片、视频、音频等），只能发送纯文本数据；
+
+*   在发送和获取数据的过程中，无法实时获取进度信息，只能判断是否完成；
+
+`XMLHttpRequest Level 2`中新增了以下功能：
+
+*   可以发送跨域请求，在服务端允许的情况下；
+
+*   支持发送和接收二进制数据；
+
+*   新增formData对象，支持发送表单数据；
+
+*   发送和获取数据时，可以获取进度信息；
+
+*   可以设置请求的超时时间
+
+
+###发送 Ajax 请求的五个步骤：
+
+（1）创建异步对象。即 XMLHttpRequest 对象。
+
+（2）使用open方法设置请求的参数。open(method, url, async)。参数解释：请求的方法、请求的url、是否异步。
+
+（3）发送请求。
+
+（4）注册事件。 注册onreadystatechange事件，状态改变时就会调用。
+
+（5）获取返回的数据。
+- 设置请求发送请求
 ```
-解答：
+open(method, url, async);
 ```
-var prod = {
-    name: '女装',
-    styles: ['短款', '冬季', '春装']
-};
-function getTpl(data){
-var a ='';
-for(key in data){
-    if(typeof data[key]=='string'){
-    a += '\t'+ '<dt>'+data[key]+'</dt>'+'\n'
-}else if(typeof  data[key] == 'object'){
-    for (var i=0;i< data[key].length;i++){
-        a = a+'\t'+ '<dd>'+data[key][i]+ "</dt>"+'\n';
-    }}
+>method：请求的类型；GET 或 POST
 
-}
-return  '<dl class="product">'+'\n'+a+'</dl>'
-};
-var result = getTpl(prod);
-console.log(result)
+>url：文件在服务器上的位置
 
-
+>async：true（异步）或 false（同步）
+- onreadystatechange 事件
+注册 onreadystatechange 事件后，每当 readyState 属性改变时，就会调用 onreadystatechange 函数。
 ```
+readyState：（存有 XMLHttpRequest 的状态。从 0 到 4 发生变化）
 
-- 2、写出两种以上声明多行字符串的方法
+0: 请求未初始化
 
+1: 服务器连接已建立
+
+2: 请求已接收
+
+3: 请求处理中
+
+4: 请求已完成，且响应已就绪
+
+status：
+
+200: "OK"。
+304:''已执行，不需更新''
+
+404: 未找到页面。
 ```
-法一：
-var longString = 'Long '
-+ 'long '
-+ 'long '
-+ 'string';
+在 onreadystatechange 事件中，当 readyState 等于 4，且状态码为200时，表示响应已就绪。
 
-法二  
-var longString = "Long \
-long \
-long \
-string";
+如果要在数据完整请求回来的时候才调用，我们需要手动写一些判断的逻辑。
 
-longString
-// "Long long long string"
-```
-- 3、补全如下代码,让输出结果为字符串: hello\\NARUTO
-
-```
-var str ='hello\\\\NARUTO'
-    console.log(str) // 在字符串中显示反斜杠，在反斜杠前再加一个\ ，即可对其转义
-```
-- 4以下代码输出什么?为什么
-```
-var str = 'waa\n哈哈'
-console.log(str.length)// \n 占一个字符
-```
-
-5、写一个函数，判断一个字符串是回文字符串，如 abcdcba是回文字符串, abcdcbb不是
-```
-function isPalindrome(str) {
-
-    if(typeof  str =='string'){
-        var fan = str.split('').reverse().join('')
-        if(str === fan){
-            return  console.log('str是回文字符串')
-        } return   console.log('str不是回文字符串')
-    }
-    return console.log('非字符串无法判断')
-	```
-	
-- 6、写一个函数，统计字符串里出现出现频率最多的字符
-```
-function getMostFreq(str) {
-  var dict = {}
-  var max = 0
-  var maxCh 
-  for(var i = 0; i < str.length; i++) {
-    var ch = str[i]
-    if(dict[ch] === undefined) {
-      dict[ch] = 1
-    }else {
-      dict[ch]++
-    }
-    if(dict[ch] > max){
-      max = dict[ch]
-      maxCh = str[i]
-    }
-  }
-  return {index: max, ch: maxCh}
-}
-
-console.log(getMostFreq('helloooo worlddd'))
-```
-- 7、写一个camelize函数，把my-short-string形式的字符串转化成myShortString形式的字符串，如
-```
-function camlize(str){
-   return str.split('-').join('')
-}
-```
-- 8、写一个 ucFirst函数，返回第一个字母为大写的字符 （***）
-```
-function a(str){
-    var a = str.split('');
-   a.splice(0,1,str[0].toUpperCase())
-    return a.join('')
-
-
-}
-console.log(a("naruto") )
-```
-- 9、写一个函数truncate(str, maxlength), 如果str的长度大于maxlength，会把str截断到maxlength长，并加上...，如
-
-```
-function truncate(str,maxlength) {
-    var len =str.length;
-
-    if(len > maxlength ){
-       str =str.slice(0,maxlength) +'...'
-
-    }
-        return str;
-}
-var a = 'sdsdsdaffffffffffffffff'
-console.log(truncate(a,5))//sdsds...
-```
-- 10、什么是 json？什么是 json 对象？什么是 json 对象字面量？什么是 JSON内置对象？
-json是一种轻量级的数据交换格式.
-
-json的对象由key,value组成,类似js的对象,但有所不同,比如在json对象里string用单引号是
-不行的,对象的值必须是string,number,null,true,false,object,arry中的一种,这里的object是
-狭义上的object不是函数,时间,正则等对象.
-
-json对象字面量是一种简单的声明生成json的方式.
-
-json对象有两个静态函数,一个用于把字符串变成json对象,另一个用于把json对象变成字符串,分别是JSON.parse()和JSON.stringify().
-
-
-####Math对象
-- 1、写一个函数，返回从min到max之间的 随机整数，包括min不包括max 
-```
-function choose(min,max) {
-    return min+Math.floor(Math.random()*(max -min));
-
-}
-console.log(choose(3,111));
-```
-- 2、写一个函数，返回从min都max之间的 随机整数，包括min包括max 
-function choose(min,max) {
-    return min+Math.floor(Math.random()*(max -min+1));
-
-}
-console.log(choose(3,111));
-- 3、写一个函数，生成一个长度为 n 的随机字符串，字符串字符的取值范围包括0到9，a到 z，A到Z。
-```
-function randomLetter(n) {
-    var h= '';
-    var a ='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    for(var i=0;i<n;i++){
-
-        h +=a[Math.floor(Math.random()*(a.length +1))]
-    }
-    return h
-
-}
-console.log(randomLetter(3));
-```
-
-function getRandStr(len){
-  //补全函数
-}
-var str = getRandStr(10); // 0a3iJiRZap
-- 4、写一个函数，生成一个随机 IP 地址，一个合法的 IP 地址为 0.0.0.0~255.255.255.255
-function choose(min,max) {
-    return min+Math.floor(Math.random()*(max -min+1));
-
-}
-function getRandIP(){
-    var str =[];
-    for(var i=0;i<4;i++){
-        str[i]=choose(0,255)
-    }
-    return str.join('.')
-}
-
-- 5、写一个函数，生成一个随机颜色字符串，合法的颜色为#000000~ #ffffff
-
-```
-function choose(min,max) {
-    return min+Math.floor(Math.random()*(max -min+1));
-
-}
-
-function getRandIP(){
-    var str =[];
-    for(var i=0;i<4;i++){
-        str[i]=choose(0,255)
-        str[i]=str[i].toString(16)
-    }
-    return '#'+str.join('')
-}
-console.log(getRandIP())
-```
-
-###数组
-
-- 1、数组方法里push、pop、shift、unshift、join、splice分别是什么作用？用 splice函数分别实现push、pop、shift、unshift方法
-####push
->push方法用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。
-```
-var arr = [1,2];
-
-arr.push() // [1]
-
-```
-####pop
->pop方法用于在数组的末端删除一个或多个元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。
-```
-var arr = [];
-
-arr.pop(1) // 1
-arr.pop('a') // 2
-arr.pop(true, {}) // 4
-arr // [1, 'a', true, {}]
-```
-####shift
->shift方法用于删除数组的第一个元素，并返回该元素。注意，该方法会改变原数组。
-```
-var arr = [2,3,4];
-
-arr.shift() // [3,4]
-2
-
-```
-shift方法可以遍历并清空一个数组。
-```
-var list = [1, 2, 3, 4, 5, 6];
-var item;
-
-while (item = list.shift()) {
-  console.log(item);
-}
-
-list // []
-```
-####unshift
->unshift方法用于在数组的第一个位置添加元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。。
-unshift方法可以接受多个参数，这些参数都会添加到目标数组头部。
-```
-var arr = [ 'c', 'd' ];
-arr.unshift('a', 'b') // 4
-arr // [ 'a', 'b', 'c', 'd' ]
-```
-####join
->join方法以指定参数作为分隔符，将所有数组成员连接为一个字符串返回。如果不提供参数，默认用逗号分隔。
-```
-var a = [1, 2, 3, 4];
-
-a.join(' ') // '1 2 3 4'
-a.join(' | ') // "1 | 2 | 3 | 4"
-a.join() // "1,2,3,4"
-//如果数组成员是undefined或null或空位，会被转成空字符串。
-
-[undefined, null].join('#')
-// '#'
-
-['a',, 'b'].join('-')
-// 'a--b'
-//通过call方法，这个方法也可以用于字符串或类似数组的对象。
-
-Array.prototype.join.call('hello', '-')
-// "h-e-l-l-o"
-
-var obj = { 0: 'a', 1: 'b', length: 2 };
-Array.prototype.join.call(obj, '-')
-// 'a-b'
-```
-####splice
->splice方法用于删除原数组的一部分成员，并可以在删除的位置添加新的数组成员，返回值是被删除的元素。注意，该方法会改变原数组。
-```
-var arr = [];
-
-var a = ['a', 'b', 'c', 'd', 'e', 'f'];
-a.splice(4, 2) // ["e", "f"]
-a // ["a", "b", "c", "d"]
-```
-- 2、写一个函数，操作数组，数组中的每一项变为原来的平方，在原数组上操作
-
-function squareArr(arr){
-}
-var arr = [2, 4, 6]
-squareArr(arr)
-console.log(arr) // [4, 16, 36]
-- 3、写一个函数，操作数组，返回一个新数组，新数组中只包含正数，原数组不变
-
-function filterPositive(arr){
-}
-var arr = [3, -1,  2,  '饥人谷', true]
-var newArr = filterPositive(arr)
-console.log(newArr) //[3, 2]
-console.log(arr) //[3, -1,  2,  '饥人谷', true]
-Date 任务
-- 1、 写一个函数getChIntv，获取从当前时间到指定日期的间隔时间
-```
-var str = getChIntv("2018-03-20");
-function getChIntv(setTime) {
-    var curretTime = new Date();
-    var targetTime =new Date(setTime);
-    console.log(curretTime)
-    console.log(targetTime)
-
-    var cha = Math.abs(curretTime - targetTime);
-    console.log(cha)
-    var chaS = Math.floor(cha/1000)
-    console.log(chaS)
-    var second = chaS%60;
-    var chaM =Math.floor(cha/1000/60)
-    var minute =chaM%60
-    var chaHours =Math.floor(chaM/60);
-    var hour =chaHours%24
-    var day =Math.floor(chaHours/24);
-  return  '距离还有'+day+'天'+hour+'小时'+minute+'分钟'+second+'秒'
-
-}
-console.log(str)
-```
-
-
-- 2、把hh-mm-dd格式数字日期改成中文日期
-
-```
-function getChsDate(str) {
-	var dist = ["零","一","二","三","四","五","六","七","八","九","十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十","二十一","二十二","二十三","二十四","二十五","二十六","二十七","二十八","二十九","三十","三十一"];
-	var arr = str.split('-');
-	var year = arr[0];
-	var month = arr[1];
-	var day = arr[2];
-
-    var Chyear = dist[parseInt(year[0])] + dist[parseInt(year[1])] + dist[parseInt(year[2])] +dist[parseInt(year[3])] + '年';
-var Chmonth = dist[parseInt(month)] + '月';
-var Chday = dist[parseInt(day)] + '日';
-return Chyear + Chmonth + Chday ;
-}
-var str = getChsDate('2015-01-08');
-console.log(str);  
-```
-- 3、写一个函数，参数为时间对象毫秒数的字符串格式，返回值为字符串。假设参数为时间对象毫秒数t，根据t的时间分别返回如下字符串:
-```
-function friendlyDate(time){
-	var now = Date.now();
-	var offset = (now - parseInt(time)) / 1000 / 60; 
-	var result;
-	if ((offset / 60 / 24 / 30 / 12) >= 1 ) {
-	  result = parseInt(offset / 60 / 24 / 30 / 12) + "年前";
-	}else if ((offset / 60 / 24 / 30) >= 1  ) {
-      result = parseInt(offset / 60 / 24 / 30) + "个月前"; 
-	}else if ((offset / 60 / 24 ) >=1 ) {
-		result = parseInt(offset / 60 / 24) + "天前";
-	}else if ((offset / 60 ) >=1) {
-		result = parseInt(offset / 60 ) + "小时前";
-	}else if (offset >=1) {
-		result = parseInt(offset) + "分钟前";
-	}else if (offset <1) {
-		result = "刚刚";
-	}
-	return result;
-}
-var str = friendlyDate( '1484286699422' ) //  1分钟前
-var str2 = friendlyDate('1483941245793') //4天前
-```
-
-####DOM
-- 题目1： dom对象的innerText和innerHTML有什么区别？
-			innerText	: 获取的是节点中文本内容
-			innerHTML  :获取的是节点的标签及内容
-- 题目2： elem.children和elem.childNodes的区别？
-			childNodes返回的是节点的子节点集合，包括元素节点、文本节点还有属性节点等
-			children返回的只是节点的元素节点集合
-			
-- 题目3：查询元素有几种常见的方法？ES5的元素选择方法是什么?
->getElementById()      //返回匹配指定ID属性的元素节点
-  getElementsByClassName() //返回一个类似数组的对象（HTMLCollection类型的对象） 
-  //元素的变化实时反映在返回结果中
-  getElementsByTagName() //返回所有指定标签的元素（搜索范围包括本身）。返回值是
-  //一个HTMLCollection对象，也就是说，搜索结果是一个动态集合，任何元素的变化都会
-  //实时反映在返回的集合中
-  getElementsByName()  //用于选择拥有name属性的HTML元素，比如form、img、frame、
-  //embed和object，返回一个NodeList格式的对象，不会实时反映元素的变化。
-   elementFromPoint()  //返回位于页面指定位置的元素。
-
-  ES5的元素选择方法：
-  querySelector()  //返回匹配指定的CSS选择器的元素节点。如果有多个节点满足匹配条件，
-  //则返回第一个匹配的节点。如果没有发现匹配的节点，则返回null。
-  querySelectorAll()  //返回匹配指定的CSS选择器的所有节点，返回的是NodeList类型的对象。
-  //NodeList对象不是动态集合，所以元素节点的变化无法实时反映在返回结果中。
-  //elementList = document.querySelectorAll(selectors);
-  //querySelectorAll方法的参数，可以是逗号分隔的多个CSS选择器，返回所有匹配
-  //其中一个选择器的元素。
-
-			
-- 题目4：如何创建一个元素？如何给元素设置属性？如何删除属性
-		createElement方法用来生成HTML元素节点
-setAttribute()方法用于设置元素属性
-removeAttribute()用于删除元素属性
-- 题目5：如何给页面元素添加子元素？如何删除页面元素下的子元素?
-appendChild()方法在元素末尾添加元素
-insertBefore()方法在某个元素之前插入元素
-removeChild()方法可用于删除某元素下的子元素
-replaceChild()接受两个参数：要插入的元素和要替换的元素
-- 题目6： element.classList有哪些方法？如何判断一个元素的 class 列表中是包含某个 class？如何添加一个class？如何删除一个class?
-add(class1, class2, ...) //在元素中添加一个或多个类名。如果指定的类名已存在，则不会添加
-toggle()支持一个类名字符串参数,若类名列表中有此类名，移除之，并返回false; 如果没有，则添加该类名，并返回true.
-contains(class): //返回布尔值，判断指定的类名是否存在
-classList.add(''):添加一个class
-classList.remove(''):删除一个class
-
-
-- 题目7： 如何选中如下代码所有的li元素？ 如何选中btn元素？
-```
-<div class="mod-tabs">
-   <ul>
-       <li>list1</li>
-       <li>list2</li>
-       <li>list3</li>
-   </ul>
-   <button class="btn">点我</button>
-</div>
-//选中所有的li元素
-document.getElementsByTagName('li')或document.querySelectorAll('li')
-
-//选中btn元素
-document.getElementsByClassName('btn')或
-getElementsByClassName('btn')
-document.querySelector('.btn')
-
-```
-
-####事件模型
-- 题目1： DOM0 事件和DOM2级在事件监听使用方式上有什么区别？
-
- html代码和JavaScript代码紧密耦合，维护不方便
-存在加载顺序问题，如果事件处理程序在html代码之后加载，用户可能在事件处理程序还未加载完成时就点击按钮之类的触发事件，存在时间差问题
-
-DOM2可以在一个节点多次绑定，易维护
-
-- 题目2： attachEvent与addEventListener的区别？
-1.参数个数不同    attachEvent 有2个  addEventListener 有3个
-2.首参数意义不同   attachEvent  事件处理函数名称   addEventListener  事件类型
-3.作用域不同    attachEvent 全局环境  Windows      addEventListener this是触发元素
-
-- 题目3： 解释IE事件冒泡和DOM2事件传播机制？
-
-IE   div-> body->html->document   冒泡阶段
-DOM2  1：document->html->body->div  捕获阶段    2:目标阶段  div-> body->html->document   3:冒泡阶段
-
-- 题目4：如何阻止事件冒泡？ 如何阻止默认事件？
-Event.preventDefault方法取消浏览器对当前事件的默认行为。
-比如点击链接后，浏览器默认会跳转到另一个页面，使用这个方法以后，就不会跳转了；
-再比如，按一下空格键，页面向下滚动一段距离，使用这个方法以后也不会滚动了。
-该方法生效的前提是，事件对象的cancelable属性为true，如果为false，调用该方法没有任何效果
-
-stopPropagation方法阻止事件在 DOM 中继续传播，防止再触发定义在别的节点上的监听函数，但是不包括在当前节点上其他的事件监听函数
-
-- 题目5：有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容
-
-<ul class="ct">
-    <li>这里是</li>
-    <li>牛肉粉丝汤</li>
-    <li>干锅牛蛙</li>
-</ul>
-<script>
- var ap = document.querySelectorAll('li');
-
- ap.forEach(function (node) {
-     node.addEventListener('click',function (e) {
-         alert(e.target.innerText)
-
-     })
-
- })
-</script>
-- 题目6： 补全代码，要求：
-
-当点击按钮开头添加时在<li>这里是</li>元素前添加一个新元素，内容为用户输入的非空字符串；当点击结尾添加时在最后一个 li 元素后添加用户输入的非空字符串.
-当点击每一个元素li时控制台展示该元素的文本内容。
+###请求实例
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body></body>
-    <ul class="ct">
-        <li>这里是</li>
-        <li>饥人谷</li>
-        <li>任务班</li>
-    </ul>
-    <input class="ipt-add-content" placeholder="添加内容"/>
-    <button id="btn-add-start">开头添加</button>
-    <button id="btn-add-end">结尾添加</button>
-</body>
-<script>
-    var start = document.getElementById('btn-add-start');
-    var end = document.getElementById('btn-add-end');
-    var text =document.querySelector('.ipt-add-content')
-    var ali =document.querySelectorAll('li')
-    var aul =document.querySelector('.ct')
-    start.addEventListener('click',function () {
-            var node =document.createElement('li')
-            console.log(text.value)
-            node.innerText = text.value
-            aul.insertBefore(node,aul.firstChild)
-            text.value =''
-
-    })
-    end.addEventListener('click',function () {
-        var node =document.createElement('li')
-        console.log(text.value)
-        node.innerText = text.value
-        aul.appendChild(node)
-        text.value =''
-
-    })
-
-    aul.addEventListener('click',function (e) {
-        var target =e.target;
-        console.log(tar)
-
-    })
-
-
-
-</script>
-
-
-
-</script>
-```
-题目7： 补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ajax</title>
 </head>
 <body>
-<ul class="ct">
-    <li data-img="https://ww3.sinaimg.cn/large/006tNc79gw1fbsvjwg3xhj30g00g03zk.jpg">鼠标放置查看图片1</li>
-    <li data-img="https://ww1.sinaimg.cn/large/006tNc79gw1fbsvkeqqlcj30an07c0sx.jpg">鼠标放置查看图片2</li>
-    <li data-img="https://ww4.sinaimg.cn/large/006tNc79gw1fbsvkyfq5qj30x60zw0wx.jpg">鼠标放置查看图片3</li>
-</ul>
-<div class="img-preview"></div>
+<h1>Ajax 发送 get 请求</h1>
+<input type="button" value="发送put_ajax请求" id='btnAjax'>
+<script type="text/javascript">
 
+    // 异步对象
+    var xhr = new XMLHttpRequest();
+
+    // 设置属性
+    xhr.open('post', '02.post.php'，true);
+
+    // 如果想要使用post提交数据,必须添加此行
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    // 将数据通过send方法传递
+    xhr.send('name=fox&age=18');
+
+    // 发送并接受返回值
+    xhr.onreadystatechange = function () {
+        // 这步为判断服务器是否正确响应
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            alert(xhr.responseText);
+        }
+    };
+</script>
 </body>
+</html>
+```
+###实例点击按钮，使用 ajax 获取数据，如何在数据到来之前防止重复点击?
+- 方法一：使用button的disabled属性，配合setTimeout 0，使在数据到来之前按钮都不能被点击
+```
+el.addEventListener("click",function(){ 
+    this.disabled=true; ajax(); 
+    setTimeout(this.disabled=false,0);
+});
+```
+- 方法二：可设置标记变量ready，初始时设置flag为true.在用户点击提交按钮后，判断ready是否为true，如果是则发送ajax请求，并把ready设置为false。 等服务端给出响应后再把ready设置为true;
+```
+var ready = true;
+    $('.add-more').on('click', function(){
+    ... 
+    if(!ready){
+        return; 
+    } 
+    ready = false;
+    $.ajax({
+       ... 
+       complete: function(){
+            ready = true; 
+            }
+         }); 
+    });
+```
+###jQuery 中的 Ajax
+JQuery作为最受欢迎的js框架之一，常见的Ajax已经帮助我们封装好了，只需要调用即可。
 
-<script>
-    var aul = document.querySelector('.ct')
-    var image =document.createElement('img')
-    var aimg =document.querySelector('.img-preview')
-    image.src = '';
-    aimg.insertBefore(image,aimg.firstChild);
-    aul.addEventListener('mouseover',function (e) {
-        image.src = e.target.getAttribute('data-img')
+格式举例：
 
+```source-js
+$.ajax({
+        url:'data,json',//请求地址
+        data:'name=fox&age=18',//发送的数据
+        type:'GET',//请求的方式
+        success:function (argument) {},// 请求成功执行的方法
+        beforeSend:function (argument) {},// 在发送请求之前调用,可以做一些验证之类的处理
+        error:function (argument) {console.log(argument);},//请求失败调用
     })
-    aul.addEventListener('mouseout',function (e) {
-        image.src=''
+```
 
-    })
+代码举例：
 
+（1）index.html
 
+```text-html-basic
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery-ajax</title>
+</head>
+<body>
+<input type="button" value="点击" id="btn">
+<div id="showInfo"></div>
+<script type="text/javascript" src="jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	$(function(){
 
+		$("#btn").click(function(){
+			$.ajax({
+				url:"data.json",
+				dataType:"text",
+				type:"get",
+				success:function(data){
+					alert(data);
+					//$("#showInfo").html(data);
+				},
+				error:function(e){
+					console.log(e);
+				}
+			});
+		});
 
+	});
 
 </script>
+</body>
+</html>
 ```
-###题目1: 下面的代码输出多少？修改代码让 fnArr[i]() 输出 i。使用 两种以上的方法
-   
-   var fnArr = [];
-    for (var i = 0; i < 10; i ++) {
-        fnArr[i] =  function(){
-    	    return i;
-        };
+
+（2）data.json：
+
+```text-html-php
+{"name":"naruto","food":"dumpling"}
+```
+一，封装一个 ajax 函数，能通过如下方式调用
+function ajax(opts){ 
+    // todo ...
+}
+document.querySelector('#btn').addEventListener('click', function(){
+    ajax({
+        url: 'getData.php', //接口地址 
+        type: 'get', // 类型， post 或者 get, 
+        data: { 
+            username: 'xiaoming', 
+            password: 'abcd1234' 
+        }, 
+        success: function(ret){
+        console.log(ret); // {status: 0} 
+        }, 
+       error: function(){
+        console.log('出错了') 
+        } 
+    })
+});
+未封装的普通ajax代码：
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<!-- 需求是：在输入框输入用户名，点击按钮，打包请求后发给后台，后台响应对应的姓名和年龄 -->
+<input type="text" name="username" id="username" placeholder="请输入用户名">
+<button class="btn">提交</button>
+<dl id="ct">
+
+</dl>
+
+<script>
+  document.querySelector('.btn').addEventListener('click',function(){
+    var xmlhttp = new XMLHttpRequest();
+    username = document.querySelector('#username').value;
+    var url = 'renwu1.php' + '?username='+username;
+
+    // GET方式:
+    xmlhttp.open('GET',url,true);
+    xmlhttp.send();
+    //POST方式：
+    // xmlhttp.open('POST','renwu1.php',true);
+    // xmlhttp.setRequestHeader("content-type","application/x-www-form-urlencoded");
+    // xmlhttp.send("username="+username);
+
+    xmlhttp.onreadystatechange = function(){
+      if(xmlhttp.readyState==4 && xmlhttp.status==200){
+        var userInfo = JSON.parse(xmlhttp.responseText);
+        dealWith(userInfo);
+      }
     }
-    console.log( fnArr[3]() );  //
-题目2： 封装一个汽车对象，可以通过如下方式获取汽车状态
-var Car = (function(){
-   var speed = 0;
-   function setSpeed(s){
-       speed = s
-   }
-   ...
-   return {
-      setSpeed: setSpeed,
-      ...
-   }
-})()
-Car.setSpeed(30);
-Car.getSpeed(); //30
-Car.accelerate();
-Car.getSpeed(); //40;
-Car.decelerate();
-Car.decelerate();
-Car.getSpeed(); //20
-Car.getStatus(); // 'running';
-Car.decelerate(); 
-Car.decelerate();
-Car.getStatus();  //'stop';
-//Car.speed;  //error
-题目3：下面这段代码输出结果是? 为什么?
-var a = 1;
-setTimeout(function(){
-    a = 2;
-    console.log(a);
-}, 0);
-var a ;
-console.log(a);
-a = 3;
-console.log(a);
-题目4：下面这段代码输出结果是? 为什么?
-```
-var flag = true;
-setTimeout(function(){//等待所有任务结束后执行
-    flag = false;
-},0)
-while(flag){} //setTimeout会等待它执行完毕，此时flag永远是true，无限循环。
-console.log(flag);  //不会执行
-```
-###题目5： 下面这段代码输出？如何输出delayer: 0, delayer:1...（使用闭包来实现）
-```
-for(var i=0;i<5;i++){
-	setTimeout(function(){
-         console.log('delayer:' + i );
-	}, 0);
-	console.log(i);
-}
-```
-```
-//立即执行函数
-    for(var i=0;i<5;i++){
+  });
+  function dealWith(userInfo){
+    var str = '<dt>性别：</dt>';
+    str += '<dd>'+ userInfo.sex +'</dd>';
+    str += '<dt>年龄：</dt>';
+    str += '<dd>'+userInfo.age +'</dd>';
+    document.querySelector('#ct').innerHTML = str;
+  }
+</script>
+</body>
+</html>
+PHP代码：
 
-        !function(i){setTimeout(function(){
-            console.log('delayer:' + i );
-        }, 0);
-        console.log(i);}(i)
+<?php
+    // $username = $_GET['username'];
+    $username = $_POST['username'];
+    if($username === 'har'){
+      $ret = array('sex'=>'男','age'=>'23');
+    }else if($username === 'marry'){
+      $ret = array('sex'=>'女','age'=>'22');
+    }else{
+      $ret = array('sex'=>'女','age'=>'27');
     }
-```
-```
-//es6
-for(let i=0;i<5;i++){
-	setTimeout(function(){
-         console.log('delayer:' + i );
-	}, 0);
-	console.log(i);
+    echo json_encode($ret);  //输出标准json格式
+?>
+封装
+
+function ajax(opts){
+    var xmlhttp = new XMLHttpRequest();
+    var dataStr = '';
+    for(var key in opts.data){
+      dataStr += key + '=' + opts.data[key]+'&'
+    }
+    dataStr = dataStr.substr(0,dataStr.length-1)
+
+    if(opts.type.toLowerCase()==='post'){
+      xmlhttp.open(opts.type,opts.url,true);
+      xmlhttp.setRequestHeader('content-type','application/x-www-form-urlencoded');
+      xmlhttp.send(dataStr);
+    }
+    if(opts.type.toLowerCase()==='get'){
+      xmlhttp.open(opts.type,opts.url+'?'+ dataStr,true);
+      xmlhttp.send();
+    }
+
+    xmlhttp.onreadystatechange = function(){
+      if(xmlhttp.readyState == 4 && xmlhttp.status == 200 ){
+        var json = JSON.parse(xmlhttp.responseText);
+        opts.success(json);
+      }
+      if(xmlhttp.readyState == 4 && xmlhttp.status == 404 ){
+        opts.error();
+      }
+    };
 }
-```
-题目6： 如何获取元素的真实宽高
-```
-function trueStyle(element,pseduoElement){
-    //IE不支持window.getComputedStyle()，支持element.currentStyle();
-	return element.currentStyle ? element.currentStyle : window.getComputedStyle(element,pseduoElement);
-}
-let trueWidth = trueStyle(element).width;
-let trueHeight = trueStyle(element).height;
-```
-题目7： URL 如何编码解码？为什么要编码？
-```
-let myURL = 'https://www.google.com/#q=javascript';
-//如果我们想编码一个URL并且可以使用它（访问），使用encodeURI();
-let simpleURL = encodeURI(myURL); //"https://www.google.com/#q=javascript"
-//如果我们想编码一个URL并且可以将其放置在某URL的参数中，使用encodeURIComponent();
-let completeURL = encodeURIComponent(myURL);
-let newURL = 'https://www.google.com/?back=' + completeURL; //"https://www.google.com/?back=https%3A%2F%2Fwww.google.com%2F%23q%3Djavascript"
-window.open(simpleURL); //将会打开一个窗口，地址为https://www.google.com/#q=javascript
+
+document.querySelector('#btn').addEventListener('click', function(){
+    ajax({
+        url: 'renwu1.php',   //接口地址
+        type: 'get',               // 类型， post 或者 get,
+        data: {
+            username: document.querySelector('#username').value;
+            password: document.querySelector('#password');
+        },
+        success: function(jsonData){
+            dealWith(jsonData);       // {status: 0}
+        },
+        error: function(){
+           console.log('出错了')
+        }
+    })
+});
+function dealWith(userInfo){
+  var str = '<dt>性别：</dt>';
+  str += '<dd>'+ userInfo.sex +'</dd>';
+  str += '<dt>年龄：</dt>';
+  str += '<dd>'+userInfo.age +'</dd>';
+  document.querySelector('#ct').innerHTML = str;
+};
+二，封装一个 ajax 函数，能通过如下方式调用
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>任务二</title>
+    <style media="screen">
+      div,a{
+        margin:0;
+        padding:0;
+      }
+      .ct li{
+        border:1px solid #ccc;
+        height: 50px;
+        line-height:50px;
+        padding-left: 10px;
+        margin: 10px 0;
+        list-style:none;
+      }
+      .ct{
+        padding-left: 0px;
+      }
+      .btn{
+        border: 1px solid red;
+        text-align: center;
+        display: inline-block;
+        height: 30px;
+        width: 80px;
+        line-height: 30px;
+        cursor: pointer;
+        position:absolute;
+        left:50%;
+        margin-top: 30px;
+        margin-left: -40px;
+        border-radius: 5px;
+      }
+      .btn:active{
+        background-color: pink;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="ct">
+      <li>内容1</li>
+      <li>内容2</li>
+    </ul>
+    <a class="btn">加载更多</a>
+
+    <script type="text/javascript">
 
 
-```
+      function ajax(opts){
+        var xml = new XMLHttpRequest();
+        var datastr = '';
+        for(var key in opts.data){
+          datastr += key + '=' + opts.data[key] + '&'
+        }
+        datastr=datastr.substr(0,datastr.length-1);
 
-题目8： 补全如下函数，判断用户的浏览器类型
-```
-function isAndroid(){
-    return /Android/.test(navigator.userAgent);
-}
-funcnction isIphone(){
-    return /iPhone/.test(navigator.userAgent);
-}
-function isIpad(){
-    return /iPad/.test(navigator.userAgent);
-}
-function isIOS(){
-    return /(iPad)|(iPhone)/i.test(navigator.userAgent);
-}
-```
+        if(opts.type.toLowerCase()=='get'){
+          xml.open(opts.type,opts.url+'?'+datastr,true);
+          xml.send();
+        }
+        if(opts.type.toLowerCase()=='post'){
+          xml.open(opts.type,opts.url,true);
+          xml.send(datastr);
+          xml.setRequestHeader('content-type','application/x-www-form-urlencoded');
+        }
+        xml.onreadystatechange = function(){
+          if(xml.readyState==4 && xml.status == 200){
+            var json = JSON.parse(xml.responseText);
+            opts.success(json);
+          }
+          if(xml.readyState==4 && xml.status ==404){
+            opts.error();
+          }
+        }
+      }
 
+      var cur = 3;
+      document.querySelector('.btn').addEventListener('click', function(){
+          ajax({
+              url: 'renwu2.php',   //接口地址
+              type: 'get',               // 类型， post 或者 get,
+              data: {
+                start:cur,
+                len: 6
+              },
+              success: function(json){
+                  if(json.status==1){
+                    append(json.data);
+                    cur += 6;
+                  }else{
+                    console.log('失败啦')
+                  }     // {status: 0}
+              },
+              error: function(){
+                 console.log('出错了')
+              }
+          })
+      });
+
+      function append(arr){
+        for(var i=0; i<arr.length; i++){
+          var li = document.createElement('li');
+          li.innerHTML = arr[i];
+          document.querySelector('.ct').appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>
+PHP端：
+
+    <?php
+        $start = $_GET['start'];
+        $len = $_GET['len'];
+        $items = array();
+
+        for($i=0;$i<$len;$i++){
+            array_push($items,'内容'.($start+$i));
+        }
+        $ret = array('status'=>1,'data'=>$items);
+      sleep(1);
+        echo json_encode($ret);
+
+    ?>
 
