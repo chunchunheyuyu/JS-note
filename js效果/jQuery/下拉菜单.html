@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        ul *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            width: 30%;
+            height: 50px;
+            background-color: aquamarine;
+            margin: 0 auto;
+        }
+        .wrap li{
+            background-color: aquamarine;
+        }
+        .wrap>ul>li{
+            float: left;
+            position: relative;
+            margin-right: 15px;
+        }
+        .wrap a{
+            display: block;
+            height: 50px;
+            width: 100px;
+            text-decoration:none ;
+            line-height: 50px;
+            font-size: 25px;
+            text-align: center;
+            color: cornflowerblue;
+        }
+        .wrap li ul{
+            position: absolute;
+            top: 50px;
+            display:none ;
+        }
+        </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <ul>
+             <li>
+                <a href="#">春</a>
+                <ul>
+                    <li><a href="#">夏</a></li>
+                    <li><a href="#">秋</a></li>
+                    <li><a href="#">冬</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">梅</a>
+                <ul>
+                    <li><a href="#">兰</a></li>
+                    <li><a href="#">竹</a></li>
+                    <li><a href="#">菊</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">天</a>
+                <ul>
+                    <li><a href="#">干</a></li>
+                    <li><a href="#">地</a></li>
+                    <li><a href="#">支</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+
+        $('.wrap>ul>li').on('mouseenter',function () {
+            var $this =$(this)
+            $this.children('ul').show('fast');
+        })//对应鼠标li，找到对应ul，显示
+        $('.wrap>ul>li').on('mouseleave',function () {
+            var $this =$(this)
+            $this.children('ul').hide('fast');
+        })
+    </script>
+
+</body>
+</html>
