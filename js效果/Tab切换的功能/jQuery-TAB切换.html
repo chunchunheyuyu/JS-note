@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现选项框</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .mod-tab{
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .mod-tab *{
+            box-sizing: border-box;
+        }
+        .mod-tab ul,.mod-tab li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .mod-tab .tabs:after{
+            content: "";
+            height: 0;
+            display: table;
+            clear: both;
+        }
+        .mod-tab .tabs li{
+            float: left;
+            width: 33.3%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-right: 1px #ccc solid;
+            border-bottom: 1px #ccc solid;
+            cursor: pointer;
+        }
+        .mod-tab .tabs li:last-child{
+            border-right: none;
+        }
+        .mod-tab .tabs .active{
+            background: #eee;
+
+        }
+        .mod-tab .panel{
+            display: none;
+            height: 100px;
+            padding: 20px;
+        }
+        .mod-tab .active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="mod-tab">
+    <ul class="tabs">
+        <li class="active">选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+    </ul>
+    <div class="panel active">内容1</div>
+    <div class="panel">内容2</div>
+    <div class="panel">内容3</div>
+</div>
+<div class="mod-tab">
+    <ul class="tabs">
+        <li class="active">选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+    </ul>
+    <div class="panel active">内容1</div>
+    <div class="panel">内容2</div>
+    <div class="panel">内容3</div>
+</div>
+<div class="mod-tab">
+    <ul class="tabs">
+        <li class="active">选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+    </ul>
+    <div class="panel active">内容1</div>
+    <div class="panel">内容2</div>
+    <div class="panel">内容3</div>
+</div>
+
+</body>
+<script>
+    $('.tabs>li').on('click',function () {
+       var $this =$(this)//保存this的值，类似length
+        var index =$(this).index()//获得li在ul中排列次序
+        $this.addClass('active').siblings().removeClass('active')//点击li，添加active，其所有同级删除active
+        //$('.panel').eq(index).addClass('active').siblings().removeClass('active')
+          $this.parents('.mod-tab').find('.panel').eq(index).addClass('active').siblings().removeClass('active')
+        //找到父容器mod-tab，下的panel，根据li的下标，找到对应panel，添加active，其同级删除active
+    })
+</script>
+</html>
