@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {padding: 0;margin: 0;}
+        ul { list-style-type: none;}
+
+        .parentWrap {
+            width: 200px;
+            text-align:center;
+            margin: 0 auto;
+            margin-top: 50px;
+
+        }
+
+        .menuGroup {
+            border:1px solid #999;
+            background-color:#e0ecff;
+        }
+
+        .groupTitle {
+            display:block;
+            height:20px;
+            line-height:20px;
+            font-size: 16px;
+            border-bottom:1px solid #ccc;
+            cursor:pointer;
+        }
+
+        .menuGroup > div {
+            height: 200px;
+            background-color:#fff;
+            display:none;
+        }
+
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            //需求：鼠标点击span，让他下面的div显示出来。让其他的div隐藏。
+            $(".parentWrap span").click(function () {
+//
+                //链式调用
+                $(this).next().show('fast')
+                       .parent("li").siblings("li").find("div").hide('slow');
+            });
+        })
+    </script>
+</head>
+<body>
+<ul class="parentWrap">
+    <li class="menuGroup">
+        <span class="groupTitle">east</span>
+        <div>白虎</div>
+    </li>
+    <li class="menuGroup">
+        <span class="groupTitle">north</span>
+        <div>玄武</div>
+    </li>
+    <li class="menuGroup">
+        <span class="groupTitle">west</span>
+        <div>朱雀</div>
+    </li>
+    <li class="menuGroup">
+        <span class="groupTitle">south</span>
+        <div>青龙</div>
+    </li>
+</ul>
+</body>
+</html>
