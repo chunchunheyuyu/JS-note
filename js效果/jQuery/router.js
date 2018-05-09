@@ -112,8 +112,11 @@ app.get('/getNews',function (req,res) {
 
         }
     ]
+    var pageIndex =req.query.page;
+    var len =2;
+    var retNews =news.slice(pageIndex*len,pageIndex*len+len);
     res.send({
         status:0,
-        data:news
+        data:retNews
     });
 })

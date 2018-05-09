@@ -46,6 +46,8 @@
         .load{
             margin-top: 20px;
             font-size: 26px;
+            display: block;
+            margin:  0 auto;
         }
 
     </style>
@@ -60,12 +62,15 @@
                     <span class="bottom-l">野生动物管理局发言人Bashir Hangi说，这名男童跟随保姆外出时被袭击。保姆外出时不知道孩子跟在她后面，她听到孩子在喊救命，她反应过来时已经晚了，那只美洲豹叼着孩子在灌木丛中消失了。</span>
                 </a>
             </li>
-            <button class="load">加载更多</button>
+
         </ul>
+        <button class="load">加载更多</button>
         <script type="text/javascript">
+            var pageIndex = 0;
             $('.load').on('click',function () {
-                $.get('./getNews').done(function (ret) {
+                $.get('./getNews',{page:pageIndex}).done(function (ret) {
                     if(ret.status===0){
+                        pageIndex++;
                         appendHtml(ret.data)
                     }else{
                         alert("服务器扑街")
@@ -78,6 +83,9 @@
                 
             })
             function appendHtml(news){
+                if(news.length===0){
+                    alert('没了别刷了')
+                }
                  var html ='';
                  $.each(news,function () {
                      html += '<li class="item">';
