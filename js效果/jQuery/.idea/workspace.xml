@@ -17,7 +17,7 @@
       <file leaf-file-name="api.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="104">
               <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
@@ -27,7 +27,7 @@
       <file leaf-file-name=".router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1061">
+            <state relative-caret-position="1664">
               <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
               <folding>
                 <element signature="e#1446#2743#0" expanded="false" />
@@ -40,7 +40,7 @@
       <file leaf-file-name="JQ-AJAX-新闻页.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JQ-AJAX-新闻页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
+            <state relative-caret-position="581">
               <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="102" selection-end-column="7" />
               <folding />
             </state>
@@ -50,7 +50,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="1274">
               <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding />
             </state>
@@ -60,7 +60,7 @@
       <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="2054">
               <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
                 <element signature="e#1399#2696#0" expanded="false" />
@@ -112,7 +112,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="50" />
     <option name="width" value="1030" />
     <option name="height" value="674" />
@@ -136,7 +136,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../css效果" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -191,14 +191,15 @@
       <workItem from="1525659191246" duration="9674000" />
       <workItem from="1525782626400" duration="4296000" />
       <workItem from="1525843571408" duration="8242000" />
+      <workItem from="1525933536361" duration="455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22212000" />
+    <option name="totallyTimeSpent" value="22667000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="0" width="1030" height="674" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15441176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -258,6 +259,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1664">
+          <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+          <folding>
+            <element signature="e#1446#2743#0" expanded="false" />
+            <marker date="1525855538904" expanded="true" signature="2907:2916" ph="{&quot;data&quot;: news...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1274">
+          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2054">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="e#1399#2696#0" expanded="false" />
+            <element signature="e#1409#1613#0" expanded="false" />
+            <element signature="e#1623#1827#0" expanded="false" />
+            <element signature="e#1837#2042#0" expanded="false" />
+            <element signature="e#2052#2258#0" expanded="false" />
+            <element signature="e#2268#2474#0" expanded="false" />
+            <element signature="e#2484#2690#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery-TAB切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="78" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JQ-AJAX-新闻页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2496">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="102" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -307,7 +367,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
+        <state relative-caret-position="104">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
@@ -315,7 +375,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1061">
+        <state relative-caret-position="1664">
           <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
           <folding>
             <element signature="e#1446#2743#0" expanded="false" />
@@ -334,7 +394,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="1274">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
           <folding />
         </state>
@@ -342,7 +402,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="2054">
           <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
             <element signature="e#1399#2696#0" expanded="false" />
@@ -358,7 +418,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JQ-AJAX-新闻页.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
+        <state relative-caret-position="581">
           <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="102" selection-end-column="7" />
           <folding />
         </state>
