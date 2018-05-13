@@ -3,10 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        ul,li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 0 auto;
+            width: 900px;
+        }
+        .container li{
+            float: left;
+          margin: 10px 10px;
+        }
+        .container li img{
+            width: 260px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
     <ul class="container">
-        <li><a href="#"><img src="" alt="" class="data-src"></a></li>
+        <li><a href="#"><img id="a" src="" data-src="image/w1.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/w2.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/w3.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/w4.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/w5.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/w6.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/w7.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/w8.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b1.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b2.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b3.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b4.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b5.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b6.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b7.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/b8.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y1.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y2.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y3.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y4.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y5.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y6.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y7.jpg"></a></li>
+        <li><a href="#"><img src="" data-src="image/y8.jpg"></a></li>
+
+
+
+
     </ul>
 </body>
+<script type="text/javascript" >
+
+
+
+    var clock
+    buleLoad()
+    $(window).on('scroll',function ( ) {
+        //滚动触发
+        if(clock) {
+        clearTimeout(clock)
+        }
+        clock  =setTimeout(function () {
+            buleLoad()
+            
+        },300)
+        
+    })
+    function buleLoad() {
+        $('.container img').each(function () {//每个img做判断
+            if(checkShow($(this))&&!isLoaded($(this))){//检测是否出现在窗口  或者 是否已经加载
+                loadImg($(this))//加载img
+                console.log('13')
+            }
+
+        })
+
+    }
+    function  checkShow($img) {
+    var scrollTop =$(window).scrollTop()//滚动距离
+    var windowHeight =$(window).height()//浏览窗口高度
+    var offsetTop =$img.offset().top//元素距离body的距离
+
+        //
+    if(offsetTop<scrollTop+windowHeight && offsetTop>scrollTop)
+        return true
+
+    }
+    function  isLoaded($img) {
+        return $img.attr('data-src')===$img.attr('src')
+
+    }
+    function  loadImg($img) {
+        $img.attr('src',$img.attr('data-src'))
+
+    }
+</script>
 </html>
