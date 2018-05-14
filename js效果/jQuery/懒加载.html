@@ -64,8 +64,8 @@
     buleLoad()
     $(window).on('scroll',function ( ) {
         //滚动触发
-        if(clock) {
-        clearTimeout(clock)
+        if(clock) {//延迟加载，如果即时加载each可能执行多次造成卡顿
+        clearTimeout(clock)//定时器存在，清除定时器，当用户停止滚动后，延迟3秒，加载图片
         }
         clock  =setTimeout(function () {
             buleLoad()
@@ -77,7 +77,7 @@
         $('.container img').each(function () {//每个img做判断
             if(checkShow($(this))&&!isLoaded($(this))){//检测是否出现在窗口  或者 是否已经加载
                 loadImg($(this))//加载img
-                console.log('13')
+
             }
 
         })
@@ -95,11 +95,11 @@
     }
     function  isLoaded($img) {
         return $img.attr('data-src')===$img.attr('src')
-
+    //img的data-src 等价于 src
     }
     function  loadImg($img) {
         $img.attr('src',$img.attr('data-src'))
-
+    //将data-src的值赋值于src中
     }
 </script>
 </html>
