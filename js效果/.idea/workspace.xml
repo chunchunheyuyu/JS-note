@@ -27,11 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="懒加载.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="懒加载.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/懒加载.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="轮播.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jQuery/轮播.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -51,6 +61,8 @@
       <list>
         <option value="$PROJECT_DIR$/固定导航栏/固定导航栏.html" />
         <option value="$PROJECT_DIR$/jQuery/懒加载.html" />
+        <option value="$PROJECT_DIR$/jQuery/image/轮播.html" />
+        <option value="$PROJECT_DIR$/jQuery/轮播.html" />
       </list>
     </option>
   </component>
@@ -61,10 +73,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-34" />
-    <option name="y" value="248" />
-    <option name="width" value="1119" />
-    <option name="height" value="674" />
+    <option name="x" value="154" />
+    <option name="width" value="931" />
+    <option name="height" value="691" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -104,7 +115,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/BaiduNetdiskDownload/尚硅谷JS高级/源码_课件/JSAdvance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bootstrap" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -121,11 +132,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.轮播.html">
     <configuration name="固定导航栏.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/js效果/固定导航栏/固定导航栏.html" />
+    <configuration name="轮播.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/js效果/jQuery/轮播.html" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.固定导航栏.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.轮播.html" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.固定导航栏.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.轮播.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.固定导航栏.html" />
       </list>
     </recent_temporary>
   </component>
@@ -142,18 +159,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526217488074</updated>
-      <workItem from="1526217489466" duration="3614000" />
+      <workItem from="1526217489466" duration="10907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3614000" />
+    <option name="totallyTimeSpent" value="10907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57210964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -194,10 +211,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/image/轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/懒加载.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,272 @@
+@charset "gb2312";
+/*ÂÖ²¥css¿ªÊ¼*/
+.Focus {
+    position: relative;
+    width:100%;
+	min-width:1080px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.Focus .bd ul li {
+    position: absolute;
+	min-width:1080px;
+}
+.Focus .bd ul li a  p {
+	width:100%;
+	min-width:1080px;
+	height:100%;
+	cursor:pointer;
+}
+.index_focus_post {
+    z-index: 10;
+}
+
+.Focus .slide_nav {
+    position: absolute;
+    left: 45%;
+    bottom:2%;
+}
+.Focus .slide_nav a {
+    text-decoration: none;
+	cursor:pointer;
+	float:left;
+    font-size:28px;
+    font-family: arial;
+    color: #fff;
+	padding:5px 5px;
+}
+.Focus .slide_nav .on{
+	text-decoration: none;
+	color: #83a5c8;
+}
+.index_focus_pre,.index_focus_next {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+    width: 72px;
+    height: 72px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 10;
+    background: url(ico_sliding.png) no-repeat;
+}
+.index_focus_pre {
+    left: 50px;
+    background-position: 0 0;
+}
+.index_focus_next {
+    right: 50px;
+    background-position: 0 -72px;
+}
+
+.index_focus_pre:hover {
+    background-position: 0 -144px;
+}
+.index_focus_next:hover {
+    background-position: 0 -216px;
+}
+/*ÂÖ²¥css½áÊø*/
+
+/* main block*/
+#body .MainBlock{
+	width:1080px;
+	margin:auto;
+	font-size:12px;
+	}
+	
+#body  .right{
+	width:312px;
+	float:left;
+	height:300px;
+	overflow:hidden;
+	border:1px solid #e5e5e5;
+	}
+	
+#body  .left{
+	float:left;
+	width:422px;
+	height:300px;
+	overflow:hidden;
+	border:1px solid #e5e5e5;}
+	
+#body  .right2{
+	float:right;
+	width:312px;
+	height:300px;
+	overflow:hidden;
+	font-size:12px;
+	border:1px solid #e5e5e5;}
+
+#body .topic{
+	height:35px;
+	}
+#body   .topic .TopicTitle{
+	background:url(index_title_bg.gif) no-repeat;
+	float:left;
+	padding-left:23px;
+	font-size:16px;
+	color:#336598;
+	height:35px;
+	font-weight:bold;
+	line-height:35px;}
+#body   .topic .TopicTitle p{
+	font-size:9px;
+	text-transform:uppercase;
+	font-weight:normal;
+	color:#999;
+	line-height:150%;}
+
+#body  .TopicTitle a{
+	color:#336598;
+	text-decoration:none;}	
+#body   .topic .TopicMore{
+	float:right;
+	font-size:12px;
+	padding-right:10px;
+	padding-top:12px;}
+#body   .topic .TopicMore img{
+	}				
+
+#body    .MBlockTable{
+margin-top:10px;
+}
+	
+#body    .MBlockTable td{
+	line-height:27px;
+	font-size:12px;
+}
+
+#body  .left .MBlockTable .ListTitle{
+	background:url(title_icon1.gif) no-repeat 10px 10px;
+	padding-left:20px;
+}
+#body  .right2  .MBlockTable td{
+	text-align:left;
+	padding-left:0;}
+	
+#body .MainBlock .left  .MBlockTable span{
+	color:#9a9a9a;
+	padding-left:10px;
+	font-size:11px;}
+
+#body .MainBlock .right .img img{
+	padding:10px 10px 0px 10px;
+	width:292px;}
+#body .MainBlock .right h1{
+	font-size:14px;
+	text-align:center;}
+
+#body .MainBlock .right .txt{
+	float:left;
+	padding:10px 10px 0px 10px;
+	color:#6c6c6c;}
+
+#body .MainBlock .right2 .img img{
+	padding:10px 10px 0px 10px;
+	width:292px;}
+#body .MainBlock .right2 h1{
+	font-size:14px;
+	text-align:center;}
+
+#body .MainBlock .right2 .txt{
+	float:left;
+	padding:10px 10px 0px 10px;
+	line-height:21px;
+	color:#6c6c6c;}
+#body .MainBlock .right2 .MBlockTable td{
+	color:#6c6c6c;}
+#body .MainBlock .right2 .MBlockTable td span{
+	color:#F90;
+	font-weight:bold;}
+
+/* juhaoyong product tuijian title*/
+.productIndexTuijian{
+	float:left;
+	width:1078px;
+	height:34;
+	overflow:hidden;
+	border:1px solid #e5e5e5;
+	border-bottom:0px;}
+	
+/* juhaoyong product images lunbo start*/
+.juhaoyong_product_lunbo {
+	width:1078px;
+	height:275px;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	border-left: 1px solid #e5e5e5;
+	}
+
+.jhy_ilb_btn_left  { float: left;  margin-top: 95px; margin-left:14px;  cursor: pointer; }
+.jhy_ilb_btn_right { float: right; margin-top: 95px; margin-right:14px; cursor: pointer; }
+
+.jhy_ilb_ul_outside { float: left; padding-left:15px; padding-top:18px;}
+.jhy_ilb_ul_outside ul li { display: inline; float: left; width: 241px; height: 243px; margin-right: 0px; overflow: hidden; cursor: pointer; }
+.jhy_ilb_ul_outside ul li img { display: block; width: 210px; height: 210px; margin-left:15px; margin-bottom: 7px; border: 1px solid #e5e5e5; }
+.jhy_ilb_ul_outside ul li img:hover { border: 1px solid #3092b9; }
+.jhy_ilb_ul_outside ul li span { display:block;float:left; width:130px; height:20px; margin-left:15px; padding-top:2px; }
+.jhy_ilb_ul_outside ul li .tuijianjiage{ float:left; width:80px; height:27px; line-height:15px; margin-left:0px; padding-top:2px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ff4400; font-weight:bold; text-align:right;}
+.jhy_ilb_ul_outside ul li a {display:block; outline-style:none; font-size:12px; text-decoration:none;}
+.jhy_ilb_ul_outside ul li a:hover { color: #3092b9; text-decoration: underline; border-color:#FF0000;}
+/* juhaoyong product images lunbo end*/
+
+/* jhyArticleListMainBlock juhaoyongCommonUnit start*/
+#body .jhyArticleListMainBlock{
+	width:1080px;
+	margin:auto;
+	font-size:12px;
+	}
+#body .juhaoyongALCommonUnit1{
+	float:left;
+	width:422px;
+	overflow:hidden;
+	border:1px solid #e5e5e5;
+	padding-bottom:7px;}
+#body .juhaoyongALCommonUnit2{
+	float:left;
+	width:312px;
+	overflow:hidden;
+	font-size:12px;
+	border:1px solid #e5e5e5;
+	padding-bottom:7px;}
+
+#body .juhaoyongCommonUnitArticleList{
+	margin-top:8px;
+}
+#body .juhaoyongCommonUnitArticleList  .JHYBlockTable td{
+	line-height:27px;
+	font-size:12px;
+}
+#body .juhaoyongCommonUnitArticleList  .JHYBlockTable .ListTitle{
+	background:url(title_icon1.gif) no-repeat 10px 10px;
+	padding-left:20px;
+}
+#body .juhaoyongCommonUnitArticleList  .JHYBlockTable span{
+	color:#9a9a9a;
+	padding-left:5px;
+	font-size:11px;}
+.juhaoyongHeightTab{ height:14px;}
+/* jhyArticleListMainBlock juhaoyongCommonUnit end*/
+
+/*JuhaoyongProductColList start*/
+#body .JuhaoyongProductColList{
+margin:auto;
+width:1078px;
+border:1px solid #e5e5e5;
+border-top:none;
+padding-bottom:12px;
+}
+
+#body .JuhaoyongProductColList .TabBlock {margin:auto; width:1032px;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList{margin:auto; width:1032px;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList .box {FLOAT:left; WIDTH:258px;font-size:12px;padding-top:12px; padding-bottom:12px;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList .box .boxImage { margin:auto;width:210px;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList .box .boxImage IMG {BORDER: #ccc 1px solid; DISPLAY: block; BACKGROUND: #fff; MARGIN: 0px auto; width:210px;height:210px;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList .box .boxTittle { margin:auto;width:210px; line-height:19px; text-align:left; padding-top:5px; padding-left:3px;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList .box .boxTittle a {font-size:12px;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList .box .boxPrice { margin:auto;width:210px; line-height:30px; text-align:left; padding-top:5px;font-size:14px;color:#ff4400; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+#body .JuhaoyongProductColList .TabBlock .juhaoyong4hangList .box A:hover IMG {BORDER: #3092b9 1px solid;}
+/*JuhaoyongProductColList end*/

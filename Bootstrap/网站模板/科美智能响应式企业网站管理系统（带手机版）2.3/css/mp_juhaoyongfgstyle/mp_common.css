@@ -1,0 +1,137 @@
+@charset "gb2312";
+/* initializ start */
+body,div,img,ul,li,td,form,p,span{
+	margin:auto;
+	padding:0px;
+	border:0px;
+	font-size:18px;
+	font-family:"Microsoft Yahei", Arial, Helvetica, sans-serif;
+	vertical-align:bottom;
+	}
+li{list-style-type:none;}
+a{text-decoration:none;}
+/* initializ end */
+
+body {
+	max-width:640px;
+	min-width: 235px;
+}
+.FontRed{color:#F00;}
+/* clearblockboth start */
+.clearblockboth {clear:both;width:100%;height:0;}
+.clearfix {clear:both;}
+/* clearblockboth end */
+img,object,embed,iframe{max-width:100%;}
+	
+.logo{
+	max-width:100%;
+	height:auto;
+	text-align:center;}
+
+.column_title1{ margin:auto; margin-bottom:10px; margin-top:10px; padding-bottom:3px; width:93.5%; line-height:25px; text-align:center; font-weight:bold; border-bottom:1px solid #dddddd;}
+.column_title3{ margin:auto; margin-bottom:10px; margin-top:10px; width:100%;height:30px; line-height:30px; text-align:center; font-weight:bold; color:#ffffff; background:#09C;}
+.column_title3 a{ color:#ffffff;}
+.column_title5{ margin:auto; margin-bottom: 0px; margin-top:10px; width:100%;height:30px; line-height:30px; text-align:center; font-weight:bold; color:#ffffff; background:#09C;}
+.column_title5 a{ color:#ffffff;}
+.commonline{ width:93.5%; margin:auto; margin-top:15px; margin-bottom:15px; height:1px; overflow:hidden; background:#dddddd;}
+/* product list start */
+.product{width:100%;}
+.product li{width:50%;float:left; margin-top:18px;}
+.picbox{width:85%;padding:2px;border:1px solid #dddddd;display:block;margin:0 auto;}
+.picbox img{display:block;width:100%;height:auto;}
+.pictitle{ margin:0 auto;width:85%;display:block;padding-top:0px; padding-bottom:5px;color:#000000;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.boxPrice{ margin:0 auto;width:85%;display:block;padding-top:0px; padding-bottom:5px;color:#ff4400; font-weight:bold;}
+.t_page{
+	padding-top:15px;
+	text-align:center;
+	font-size:14px;
+	line-height:25px;
+	color:#777777;
+	}	
+.t_page a{
+	padding:2px 5px;
+	font-size:14px;
+	border:1px solid #DEDEDC;
+	margin:0px 3px;}
+.t_page .FontRed{ font-size:14px;}
+/* product list end */
+
+/* product content start */
+.ProInfo .infos{
+	font-size:14px;
+	color:#666666;
+	text-align:center;
+	margin-bottom:15px;}
+.ProInfo .image{text-align:center;}
+.ProInfo .column .pro_shichangjia{
+	color:#666666;
+	text-decoration:line-through;}
+.ProInfo .column .pro_youhuijia{
+	color:#F00;
+	font-weight:bold;}
+.ProInfo .column .pro_youhuijia span{
+	color:#666666;
+	font-weight:normal;}
+.ProInfo .column .pro_tijiaodingdan{text-align:center; margin-bottom:10px;}
+.ProInfo .column .pro_qutaobaopai{text-align:center;}
+/* product content end */
+
+/* articlelist start */
+.articlelist{ width:93.5%;}
+.articlelist li{vertical-align:bottom;}
+.articlelist .productli{line-height:25px;border-bottom:1px solid #dddddd; overflow:hidden;}
+.articlelist .articleli{line-height:25px;border-bottom:1px solid #dddddd; overflow:hidden;}
+.articlelist li a{ color:#2a2a2a;}
+
+.articlelist .productli img{ float:left; BORDER: #ddd 1px solid; DISPLAY: block; width:66px;height:66px; margin-top:5px; margin-bottom:5px; margin-right:10px;}
+.articlelist .productli .phzxtitle{ line-height:22px; height:50px; padding-top:3px;}
+.articlelist .productli .phzxprice{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ff4400;height:25px;}
+.articlelist .productli .phzxprice span{ color:#ff4400; padding-right:0px;}
+
+.articlelist .articleli .phzxtitle{ line-height:25px; height:25px; margin-top:8px;}
+.articlelist .articleli .phzxtime{ font-size:12px; color:#999999; margin-bottom:4px;}
+/* articlelist end */
+
+/* article content start */
+.content .prenext{ margin-top:10px;}
+.content .prenext ul li { line-height:30px;}
+/* article content end */
+
+.content{ width:93.5%; line-height:30px; color:#2a2a2a;}
+.commonContentTitle{
+	font-size:18px;
+	line-height:25px;
+	border-bottom:1px solid #dddddd;
+	margin-top:10px;
+	padding-left:10px;
+	color:#000000;
+	font-weight:bold;}
+/* searchbox start*/
+.searchbox { padding:0px 10px 3px 13px; text-align:center;}
+.searchbox #search-text {
+	width: 130px;
+	padding:0px 5px;
+	border: 1px solid #36a2d5;
+	margin:0px;
+	color:#999999;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+}
+.searchbox #search-submit {
+	border:none;
+	background: #36a2d5;
+	font-size:14px;
+	color: #FFFFFF;
+	height:27px;
+	margin:0px;	
+	cursor:pointer;
+	padding:0px 5px;
+	line-height:27px;
+}
+/* searchbox end*/
+.footer { width:100%; text-align:center; font-size:14px; color:#aaaaaa; line-height:21px; padding-bottom:15px;}
+.footer a{ color:#aaaaaa;}
+.bottomnav { width:100%; text-align:center; font-size:16px; color:#aaaaaa;}
+.bottomnav a{ color:#aaaaaa;}
+

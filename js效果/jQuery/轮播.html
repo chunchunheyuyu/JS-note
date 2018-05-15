@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <style>
+        ul,li,p{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .carousel{
+            position: relative;
+            width: 500px;
+            height: 400px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .container{
+            position: absolute;
+        }
+        .container img{
+            width: 500px;
+            height: 400px;
+        }
+        .container:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container li{
+            float: left;
+        }
+        .arrow{
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            margin-top: -25px;
+            line-height: 50px;
+            text-align: center;
+            background: grey;
+            color: whitesmoke;
+            border-radius: 50px;
+            box-shadow: 0 0 5px #999;
+            opacity: 0.5;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .arrow:hover{
+            opacity: 1;
+        }
+        .pre{
+            left: 10px;
+        }
+        .next{
+            right: 10px;
+        }
+        ul.bullet{
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        ul.bullet li{
+            width: 35px;
+            height: 8px;
+            border-radius: 3px;
+            background: #666666;
+            display: inline-block;
+            cursor: pointer;
+        }
+        ul.bullet li.active{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+        <div class="carousel">
+            <ul class="container">
+                <li><a href=""><img src="image/w1.jpg" alt=""></a></li>
+                <li><a href=""><img src="image/b1.jpg" alt=""></a></li>
+                <li><a href=""><img src="image/y1.jpg" alt=""></a></li>
+                <li><a href=""><img src="image/r1.jpg" alt=""></a></li>
+
+            </ul>
+            <a href=""class="pre arrow"><</a>
+            <a href="" class="next arrow">></a>
+            <ul class="bullet">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <script>
+            var $imgs=$('.container>li')
+            var imgCoun =$imgs.length
+            var imgWidth
+        </script>
+
+</body>
+</html>

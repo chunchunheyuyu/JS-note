@@ -61,7 +61,7 @@
 
 
     var clock
-    buleLoad()
+    buleLoad()//因为滚动才加载，用户第一次进入页面时没有滚动，所以提前做次判断加载图片
     $(window).on('scroll',function ( ) {
         //滚动触发
         if(clock) {//延迟加载，如果即时加载each可能执行多次造成卡顿
