@@ -17,13 +17,14 @@
         }
         .carousel{
             position: relative;
-
             height: 400px;
+            width: 500px;
             overflow: hidden;
             margin: 0 auto;
         }
         .container{
             position: absolute;
+            overflow: hidden;
         }
         .container img{
             width: 500px;
@@ -76,7 +77,7 @@
             display: inline-block;
             cursor: pointer;
         }
-        ul.bullet li.active{
+        .bullet >li.active{
             background: yellow;
         }
     </style>
@@ -90,8 +91,8 @@
                 <li><a href=""><img src="image/r1.jpg" alt=""></a></li>
 
             </ul>
-            <a href=""class="pre arrow"><</a>
-            <a href="" class="next arrow">></a>
+            <a href="#"class="pre arrow"><</a>
+            <a href="#" class="next arrow">></a>
             <ul class="bullet">
                 <li class="active"></li>
                 <li></li>
@@ -102,12 +103,83 @@
         <script>
             var $imgUl=$('.container')
             var $imgs=$('.container>li')
-            var imgCount =$imgs.length
-            var imgWidth =$imgs.width()
-            $imgUl.append($imgs.first().clone())
-            $imgUl.prepend($imgs.last().clone())
-            $imgUl.width((imgCount + 2)*imgWidth)
-            $imgUl.css({left:-imgWidth})
+            var imgCount =$imgs.length//图片数量
+            var imgWidth =$imgs.width()//图片宽度
+            var $preBtn =$('.carousel .pre ')//上一个按钮
+            var $nextBtn=$('.carousel .next ')//下一个按钮
+            var $bullets =$('.carousel .bullet li')
+
+            var pageIndex =0//初始为0
+            var isAnimate =false//防止用户多次点击，动画锁
+
+            $imgUl.append($imgs.first().clone())//第一张复制在最后
+            $imgUl.prepend($imgs.last().clone())//最后一张复制在最前
+            $imgUl.width((imgCount + 2)*imgWidth)//所有图片总宽
+            $imgUl.css({left:-imgWidth})//显示第一张
+
+            //下一个按钮函数
+            $nextBtn.click(function () {
+                console.log('213213')
+                playNext(1)//下一页
+
+            })
+            //上一个按钮函数
+            $preBtn.click(function () {
+                playPre(1)//上一页
+            })
+
+            $bullets.click(function () {
+                var index =$(this).index()//获得点击方格下标
+                if(index>pageIndex){
+                    playNext(index - pageIndex)
+                }else  if(index<pageIndex){
+                    playPre(pageIndex-index)
+                }
+
+
+
+            })
+
+            function playNext(len) {
+                if(isAnimate)return//防多点击锁
+                isAnimate =true
+
+                $imgUl.animate({//左移动 len 张
+                    left: '-='+len*imgWidth
+                },function () {
+                    pageIndex+=len
+                    if(pageIndex=== imgCount){
+                        pageIndex = 0//如果移动至复制图片上时，回本体位置
+                        $imgUl.css({left:-imgWidth})
+                    }
+                    setBullet()//按钮颜色点击显示
+                    console.log(pageIndex)
+                    isAnimate =false
+                })
+            }
+                function playPre(len) {
+                if(isAnimate)return
+                    isAnimate =true
+                $imgUl.animate({
+                    left: '+='+len*imgWidth
+                },function () {
+                    pageIndex-=len
+                    if(pageIndex=== -1){
+                        pageIndex = imgCount-1//如果移动至复制图片上时，回本体位置
+                        $imgUl.css({left:-imgWidth*imgCoun})
+                    }
+                    setBullet()
+                    isAnimate =false
+                })
+            }
+                function  setBullet() {//点击时移除样式，给正在点击按钮添加样式
+                $bullets.removeClass('active')
+                    .eq(pageIndex).addClass('active')
+
+                }
+
+
+
         </script>
 
 </body>
