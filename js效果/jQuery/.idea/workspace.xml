@@ -24,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="懒加载.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="懒加载.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/懒加载.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="130">
+              <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="轮播.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/轮播.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2210">
+              <caret line="109" column="38" lean-forward="false" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -64,6 +74,7 @@
         <option value="$PROJECT_DIR$/JQ-AJAX-新闻页.html" />
         <option value="$PROJECT_DIR$/../鼠标跟随/mouse.html" />
         <option value="$PROJECT_DIR$/懒加载.html" />
+        <option value="$PROJECT_DIR$/轮播.html" />
       </list>
     </option>
   </component>
@@ -73,9 +84,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-34" />
-    <option name="y" value="248" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="745" />
+    <option name="y" value="134" />
     <option name="width" value="1119" />
     <option name="height" value="674" />
   </component>
@@ -94,6 +105,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,23 +114,16 @@
               <item name="jQuery" type="b2602c69:ProjectViewProjectNode" />
               <item name="jQuery" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jQuery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -139,26 +145,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.懒加载.html">
+  <component name="RunManager" selected="JavaScript Debug.轮播.html">
     <configuration name="JQ-AJAX-新闻页.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/JQ-AJAX-新闻页.html" />
     <configuration name="手风琴.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/手风琴.html" />
+    <configuration name="轮播.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/轮播.html" />
     <configuration name="商城浏览目录.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/商城浏览目录.html" />
     <configuration name="懒加载.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/懒加载.html" />
     <configuration name="jQuery-TAB切换-上下滑动.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/jQuery-TAB切换-上下滑动.html" />
-    <list size="5">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.商城浏览目录.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.懒加载.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.轮播.html" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.懒加载.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.商城浏览目录.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.轮播.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
       </list>
     </recent_temporary>
   </component>
@@ -180,25 +185,27 @@
       <workItem from="1525843571408" duration="8242000" />
       <workItem from="1525933536361" duration="455000" />
       <workItem from="1526114255145" duration="11663000" />
+      <workItem from="1526478683700" duration="1218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34330000" />
+    <option name="totallyTimeSpent" value="35548000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="745" y="134" width="1119" height="674" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2629193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976827" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -219,11 +226,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/手风琴.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery-TAB切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/懒加载.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2158">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -231,10 +261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1664">
           <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding>
-            <element signature="e#1446#2743#0" expanded="false" />
-            <marker date="1525855538904" expanded="true" signature="2907:2916" ph="{&quot;data&quot;: news...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -242,7 +268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1274">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -250,15 +275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2054">
           <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="e#1399#2696#0" expanded="false" />
-            <element signature="e#1409#1613#0" expanded="false" />
-            <element signature="e#1623#1827#0" expanded="false" />
-            <element signature="e#1837#2042#0" expanded="false" />
-            <element signature="e#2052#2258#0" expanded="false" />
-            <element signature="e#2268#2474#0" expanded="false" />
-            <element signature="e#2484#2690#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -274,7 +290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2496">
           <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="102" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -282,7 +297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -290,10 +304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1664">
           <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding>
-            <element signature="e#1446#2743#0" expanded="false" />
-            <marker date="1525855538904" expanded="true" signature="2907:2916" ph="{&quot;data&quot;: news...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -301,7 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1274">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -309,15 +318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2054">
           <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="e#1399#2696#0" expanded="false" />
-            <element signature="e#1409#1613#0" expanded="false" />
-            <element signature="e#1623#1827#0" expanded="false" />
-            <element signature="e#1837#2042#0" expanded="false" />
-            <element signature="e#2052#2258#0" expanded="false" />
-            <element signature="e#2268#2474#0" expanded="false" />
-            <element signature="e#2484#2690#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -333,7 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2496">
           <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="102" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -341,7 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -349,15 +347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1399#2696#0" expanded="false" />
-            <element signature="e#1409#1613#0" expanded="false" />
-            <element signature="e#1623#1827#0" expanded="false" />
-            <element signature="e#1837#2042#0" expanded="false" />
-            <element signature="e#2052#2258#0" expanded="false" />
-            <element signature="e#2268#2474#0" expanded="false" />
-            <element signature="e#2484#2690#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -373,7 +362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1690">
           <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -381,7 +369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -396,7 +383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1274">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -404,15 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2054">
           <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="e#1399#2696#0" expanded="false" />
-            <element signature="e#1409#1613#0" expanded="false" />
-            <element signature="e#1623#1827#0" expanded="false" />
-            <element signature="e#1837#2042#0" expanded="false" />
-            <element signature="e#2052#2258#0" expanded="false" />
-            <element signature="e#2268#2474#0" expanded="false" />
-            <element signature="e#2484#2690#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -420,7 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -428,7 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1456">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -436,10 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding>
-            <element signature="e#1446#2743#0" expanded="false" />
-            <marker date="1525855538904" expanded="true" signature="2907:2916" ph="{&quot;data&quot;: news...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -447,7 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
           <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="102" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -469,8 +439,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/懒加载.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="109" column="38" lean-forward="false" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
           <folding />
         </state>
       </provider>
