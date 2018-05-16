@@ -144,8 +144,8 @@
     function play(idx){
         if(isAnimate) return;
         isAnimate = true;
-        $items.eq(curIdx).fadeOut(500);
-        $items.eq(idx).fadeIn(500, function(){
+        $items.eq(curIdx).fadeOut(500);//当前图片淡出
+        $items.eq(idx).fadeIn(500, function(){//目标图片淡入
             isAnimate = false;
         });
 
