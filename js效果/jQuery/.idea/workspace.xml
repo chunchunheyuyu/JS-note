@@ -37,8 +37,18 @@
       <file leaf-file-name="轮播.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/轮播.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="185" selection-end-column="7" />
+            <state relative-caret-position="26">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="瀑布流.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/瀑布流.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -47,8 +57,8 @@
       <file leaf-file-name="轮播（渐变，自动播放）.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/轮播（渐变，自动播放）.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="159" column="4" lean-forward="true" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
+            <state relative-caret-position="737">
+              <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,8 +94,9 @@
         <option value="$PROJECT_DIR$/JQ-AJAX-新闻页.html" />
         <option value="$PROJECT_DIR$/../鼠标跟随/mouse.html" />
         <option value="$PROJECT_DIR$/懒加载.html" />
-        <option value="$PROJECT_DIR$/轮播.html" />
         <option value="$PROJECT_DIR$/轮播（渐变，自动播放）.html" />
+        <option value="$PROJECT_DIR$/轮播.html" />
+        <option value="$PROJECT_DIR$/瀑布流.html" />
       </list>
     </option>
   </component>
@@ -117,7 +128,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,6 +139,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,28 +167,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.轮播（渐变，自动播放）.html">
+  <component name="RunManager" selected="JavaScript Debug.轮播.html">
     <configuration name="JQ-AJAX-新闻页.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/JQ-AJAX-新闻页.html" />
     <configuration name="手风琴.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/手风琴.html" />
+    <configuration name="轮播.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/轮播.html" />
     <configuration name="轮播.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/轮播.html" />
     <configuration name="轮播（渐变，自动播放）.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/轮播（渐变，自动播放）.html" />
     <configuration name="商城浏览目录.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/商城浏览目录.html" />
     <configuration name="懒加载.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/懒加载.html" />
     <configuration name="jQuery-TAB切换-上下滑动.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/jQuery-TAB切换-上下滑动.html" />
-    <list size="5">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.轮播.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.轮播（渐变，自动播放）.html" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.轮播（渐变，自动播放）.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.轮播.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.轮播.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
       </list>
     </recent_temporary>
   </component>
@@ -200,11 +210,12 @@
       <workItem from="1525933536361" duration="455000" />
       <workItem from="1526114255145" duration="11663000" />
       <workItem from="1526478683700" duration="9343000" />
+      <workItem from="1526519916065" duration="2867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43673000" />
+    <option name="totallyTimeSpent" value="46540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -240,6 +251,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/手风琴.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/懒加载.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="185" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery-TAB切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/轮播（渐变，自动播放）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4134">
+          <caret line="159" column="4" lean-forward="true" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/手风琴.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -459,18 +510,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/轮播.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="185" selection-end-column="7" />
+        <state relative-caret-position="26">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播（渐变，自动播放）.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="159" column="4" lean-forward="true" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
+        <state relative-caret-position="737">
+          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding />
         </state>
       </provider>

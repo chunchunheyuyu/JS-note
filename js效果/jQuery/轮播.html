@@ -177,6 +177,15 @@
                     .eq(pageIndex).addClass('active')
 
                 }
+                //自动下一页
+            function autoPlay(){
+                clock = setInterval(function(){
+                    playNext(1);
+                    console.log('abc')
+                }, 3000);
+            }
+
+            autoPlay()
 
 
 
