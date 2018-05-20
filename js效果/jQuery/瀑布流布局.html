@@ -16,15 +16,7 @@
             list-style: none;
         }
 
-        .clearfix {
-            *zoom: 1;
-        }
 
-        .clearfix:after {
-            display: block;
-            content: '';
-            clear: both;
-        }
 
         a {
             text-decoration: none;
@@ -44,7 +36,7 @@
             width: 200px;
             margin-right: 10px;
             margin-top: 10px;
-            transition: all 1s;
+            transition: all 1.5s;
         }
 
         .h1 {
@@ -85,6 +77,38 @@
 </div>
 <script>
 
+//封装性
+    var waterFull =(function () {
+       function init() {
+           waterfull()
+           $(window).resize(function () {//页面发生变化 重新排列
+               waterfull()
+           })
+       }
+        function waterfull() {
+            var colLength = parseInt($('.content').width()/$('.item').width())//得到列数
+            var itemArr = []
+            for(var i=0;i<colLength;i++){
+                itemArr[i]=0
+            }
+            $('.item').each(function () {
+                var minValue =Math.min.apply(null,itemArr)//最小值
+                var minIndex =itemArr.indexOf(minValue)//最小值对应下标
+
+                $(this).css({
+                    top:itemArr[minIndex],//放在第几列
+                    left:$(this).outerWidth(true)*minIndex//对应 坐标
+                })
+
+                itemArr[minIndex]+=$(this).outerHeight(true)//放置后 添加对应高度
+
+            })
+        }
+        return{
+            init:init
+        }
+    })()
+    waterFull.init()
 </script>
 </body>
 </html>
