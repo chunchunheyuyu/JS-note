@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        ul,li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 0 auto;
+            width: 900px;
+        }
+        .container li{
+            float: left;
+            margin: 10px 10px;
+        }
+        .container li img{
+            width: 260px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="ct-waterfall">
+        <ul id="pic-ct" class="clearfix">
+            <li class="item hide"></li>
+        </ul>
+        <div class="load"></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" >
+
+
+
+    var clock
+    buleLoad()//因为滚动才加载，用户第一次进入页面时没有滚动，所以提前做次判断加载图片
+    $(window).on('scroll',function ( ) {
+        //滚动触发
+        if(clock) {//延迟加载，如果即时加载each可能执行多次造成卡顿效果
+            clearTimeout(clock)//定时器存在，清除定时器，当用户停止滚动后，延迟3秒，加载图片
+        }
+        clock  =setTimeout(function () {
+            buleLoad()
+
+        },300)
+
+    })
+    function buleLoad() {
+        $('.container img').each(function () {//每个img做判断
+            if(checkShow($(this))&&!isLoaded($(this))){//检测是否出现在窗口  或者 是否已经加载
+                loadImg($(this))//加载img
+
+            }
+
+        })
+
+    }
+    function  checkShow($img) {
+        var scrollTop =$(window).scrollTop()//滚动距离
+        var windowHeight =$(window).height()//浏览窗口高度
+        var offsetTop =$img.offset().top//元素距离body的距离
+
+        //
+        if(offsetTop<scrollTop+windowHeight && offsetTop>scrollTop)
+            return true
+
+    }
+    function  isLoaded($img) {
+        return $img.attr('data-src')===$img.attr('src')
+        //img的data-src 等价于 src
+    }
+    function  loadImg($img) {
+        $img.attr('src',$img.attr('data-src'))
+        //将data-src的值赋值于src中
+    }
+</script>
+</html>
