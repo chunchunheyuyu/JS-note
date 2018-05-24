@@ -49,9 +49,11 @@
         </main>
         <script>
             var mainNode =document.querySelector('main')
+            var mainNodeWidth=parseFloat(getComputedStyle(mainNode).width)//窗口宽度
             var baseHight =200
-            var rowTotalWidth = 0
-            getData('pig')
+            var rowList =[]//当前一行的图片
+            var rowTotalWidth = 0//一行图片总宽
+            getData('dog')
                 .then(render)
                 .catch(function (err) {
                     console.log(err)
@@ -60,10 +62,40 @@
                 data.hits.forEach(function (imgInfo) {
                     console.log(imgInfo)
                     imgInfo.newHight = baseHight
-                    imgInfo.newWidth =imgInfo.webformatWight/imgInfo.webformatHeight*newHight
+                    imgInfo.newWidth =(imgInfo.webformatWidth/imgInfo.webformatHeight)*baseHight//等比缩放，获得新图片宽度
 
+                    if(imgInfo.newWidth+rowTotalWidth > mainNodeWidth){
+
+                        layout(rowList,rowTotalWidth)//绘制图片
+                        rowList=[imgInfo]//放不下的图，成为新的一行开头图片
+                        rowTotalWidth=imgInfo.newWidth//开头图片宽度
+                    }else {
+
+                        rowList.push(imgInfo)//图片添加
+                        rowTotalWidth+=imgInfo.newWidth//这行图片宽度
+
+                    }
+                })
+                
+            }
+            layout(rowList,rowTotalWidth)
+            var rowList =[]//当前一行的图片
+            var rowTotalWidth = 0//一行图片总宽
+
+            function layout(list,rowTotalWidth) {
+                list.forEach(function (imgInfo) {
+                    var figureNode =document.createElement('figure')
+                    var imgNode =document.createElement('img')
+                    imgNode.src=imgInfo.webformatURL
+                    figureNode.appendChild(imgNode)
+                    var newHeight=(mainNodeWidth/rowTotalWidth)*baseHight
+                    figureNode.style.height=newHeight+'px'
+                    figureNode.style.width=(imgInfo.webformatWidth/imgInfo.webformatHeight)*newHeight+'px'
+                    mainNode.appendChild(figureNode)
+                    console.log('seed')
                 })
 
+                
             }
            function getData(keyword){
                return new  Promise(function (resolve,reject) {
@@ -92,7 +124,6 @@
                    }
                })
            }
-
 
 
 
