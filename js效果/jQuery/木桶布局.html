@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>木桶布局</title>
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
     <style>
         *{
             margin: 0;
@@ -35,12 +35,13 @@
         main>figure img{
             width: 100%;
             height: 100%;
+
         }
     </style>
 </head>
 <body>
         <header>
-            <input type="text" id="search-ipt"placeholder="请输入关键字检索">
+            <!--<input type="text" id="search-ipt"placeholder="请输入关键字检索">-->
         </header>
         <main>
             <figure>
@@ -53,7 +54,31 @@
             var baseHight =200
             var rowList =[]//当前一行的图片
             var rowTotalWidth = 0//一行图片总宽
-            getData('dog')
+
+            
+            document.body.onresize =throttle(function () {
+                mainNode.innerHTML=''
+                mainNodeWidth=parseFloat(getComputedStyle(mainNode).width)
+                getData('game')
+                    .then(render)
+                    .catch(function (err) {
+                        console.log(err)
+                    })
+                
+            },1200)
+            function  throttle(fn,delay) {//在delay 秒后执行 重绘
+            var timer = null
+            return function () {
+                var context =this
+                clearTimeout(timer)
+                timer =setTimeout(function () {
+                    fn.apply(context,arguments)
+
+                },delay)
+
+            }
+            }
+            getData('game')
                 .then(render)
                 .catch(function (err) {
                     console.log(err)
@@ -76,7 +101,10 @@
 
                     }
                 })
-                
+                layout(rowList,mainNodeWidth)
+                rowList=[]
+                rowTotalWidth=0
+
             }
             layout(rowList,rowTotalWidth)
             var rowList =[]//当前一行的图片
@@ -103,7 +131,7 @@
                        key: '9081329-ae9a8758b9e118192c229f289',
                        q: keyword,
                        image_type: 'photo',
-                       per_page: 20
+                       per_page: 50
                    }
                    var url = 'https://pixabay.com/api/?'
                    for (var key in data) {
