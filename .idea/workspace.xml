@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b5f818b-832a-4aad-a5fd-8f3967bb4bd0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html" />
-      <change beforePath="$PROJECT_DIR$/js效果/jQuery/.idea/workspace.xml" afterPath="$PROJECT_DIR$/js效果/jQuery/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/js效果/jQuery/木桶布局.html" afterPath="$PROJECT_DIR$/js效果/jQuery/木桶布局.html" />
-    </list>
+    <list default="true" id="3b5f818b-832a-4aad-a5fd-8f3967bb4bd0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,14 +14,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="返回顶部.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="返回顶部.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="708">
               <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="木桶布局 - 面向对象.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,6 +52,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html" />
+        <option value="$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html" />
       </list>
     </option>
   </component>
@@ -57,7 +62,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="417" />
     <option name="y" value="264" />
     <option name="width" value="1119" />
@@ -94,7 +99,7 @@
               <item name="JS-note" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS-note" type="462c0819:PsiDirectoryNode" />
               <item name="js效果" type="462c0819:PsiDirectoryNode" />
-              <item name="返回顶部、" type="462c0819:PsiDirectoryNode" />
+              <item name="jQuery" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -126,11 +131,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.木桶布局 - 面向对象.html">
+    <configuration name="木桶布局 - 面向对象.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS-note/js效果/jQuery/木桶布局 - 面向对象.html" />
     <configuration name="返回顶部.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS-note/js效果/返回顶部、/返回顶部.html" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.返回顶部.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.木桶布局 - 面向对象.html" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.返回顶部.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.木桶布局 - 面向对象.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.返回顶部.html" />
       </list>
     </recent_temporary>
   </component>
@@ -147,18 +158,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527345575063</updated>
-      <workItem from="1527345576451" duration="67000" />
+      <workItem from="1527345576451" duration="849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67000" />
+    <option name="totallyTimeSpent" value="849000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="417" y="264" width="1119" height="656" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24932003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -190,11 +201,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="708">
           <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
