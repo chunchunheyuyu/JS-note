@@ -17,7 +17,7 @@
       <file leaf-file-name="瀑布流布局.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/瀑布流布局.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="2158">
               <caret line="83" column="54" lean-forward="false" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
               <folding />
             </state>
@@ -27,10 +27,10 @@
       <file leaf-file-name="木桶布局.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/木桶布局.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+            <state relative-caret-position="104">
+              <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding>
-                <element signature="e#2155#2235#0" expanded="false" />
+                <element signature="e#3584#3664#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,13 +72,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1030" />
-    <option name="y" value="138" />
+    <option name="x" value="417" />
+    <option name="y" value="264" />
     <option name="width" value="1119" />
-    <option name="height" value="695" />
+    <option name="height" value="656" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -91,26 +91,12 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="jQuery" type="cbb8eebc:String" user="jQuery" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/bootstrap/bootstrap练习网站 -图片需要重新链接" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -132,9 +118,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.木桶布局.html">
+  <component name="RunManager" selected="JavaScript Debug.jQuery-TAB切换-上下滑动.html">
     <configuration name="JQ-AJAX-新闻页.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/JQ-AJAX-新闻页.html" />
     <configuration name="手风琴.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/手风琴.html" />
+    <configuration name="懒加载.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/懒加载.html" />
+    <configuration name="木桶布局.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/木桶布局.html" />
     <configuration name="木桶布局.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/木桶布局.html" />
     <configuration name="木桶布局.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/木桶布局.html" />
     <configuration name="瀑布流布局.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/瀑布流布局.html" />
@@ -142,23 +130,20 @@
     <configuration name="轮播.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/轮播.html" />
     <configuration name="轮播（渐变，自动播放）.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/轮播（渐变，自动播放）.html" />
     <configuration name="商城浏览目录.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/商城浏览目录.html" />
-    <configuration name="懒加载.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/懒加载.html" />
     <configuration name="jQuery-TAB切换-上下滑动.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/jQuery-TAB切换-上下滑动.html" />
     <configuration name="jQuery-TAB切换.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQuery/jQuery-TAB切换.html" />
-    <list size="5">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.木桶布局.html" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.木桶布局.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.手风琴.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.JQ-AJAX-新闻页.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jQuery-TAB切换-上下滑动.html" />
       </list>
     </recent_temporary>
   </component>
@@ -186,14 +171,16 @@
       <workItem from="1526753955402" duration="4276000" />
       <workItem from="1527041297863" duration="4193000" />
       <workItem from="1527072297013" duration="10516000" />
+      <workItem from="1527219084845" duration="2842000" />
+      <workItem from="1527345500188" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72492000" />
+    <option name="totallyTimeSpent" value="75408000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1030" y="138" width="1119" height="695" extended-state="0" />
+    <frame x="417" y="264" width="1119" height="656" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2629193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -253,7 +240,7 @@
         <state relative-caret-position="338">
           <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
           <folding>
-            <element signature="e#2155#2235#0" expanded="false" />
+            <element signature="e#3584#3664#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -292,7 +279,7 @@
         <state relative-caret-position="208">
           <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
-            <element signature="e#2155#2235#0" expanded="false" />
+            <element signature="e#3584#3664#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,7 +566,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/瀑布流布局.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="2158">
           <caret line="83" column="54" lean-forward="false" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
           <folding />
         </state>
@@ -587,10 +574,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/木桶布局.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        <state relative-caret-position="104">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding>
-            <element signature="e#2155#2235#0" expanded="false" />
+            <element signature="e#3584#3664#0" expanded="false" />
           </folding>
         </state>
       </provider>
