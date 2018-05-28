@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5f818b-832a-4aad-a5fd-8f3967bb4bd0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html" afterPath="$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js效果/组件/modal组件/modal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js效果/组件/tab组件/tab.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js效果/组件/懒加载/懒加载.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js效果/组件/日历组件/日历.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js效果/组件/轮播组件/轮播.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue/vue实例.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,11 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="返回顶部.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
+            <state relative-caret-position="1248">
               <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -28,14 +34,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="木桶布局 - 面向对象.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="木桶布局 - 面向对象.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="52">
+              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue实例.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/vue实例.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1748">
+              <caret line="111" column="10" lean-forward="false" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js效果/组件/modal组件/modal.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3646">
+              <caret line="205" column="26" lean-forward="false" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
+              <folding>
+                <marker date="1527497083042" expanded="true" signature="3789:3801" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="懒加载.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js效果/组件/懒加载/懒加载.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="146" column="10" lean-forward="true" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="轮播.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js效果/组件/轮播组件/轮播.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="812">
+              <caret line="217" column="7" lean-forward="false" selection-start-line="217" selection-start-column="7" selection-end-line="217" selection-end-column="7" />
+              <folding>
+                <element signature="e#2626#2630#1" expanded="true" />
+                <element signature="e#2666#2670#1" expanded="true" />
+                <element signature="e#3479#3483#1" expanded="true" />
+                <element signature="e#3519#3523#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="日历.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js效果/组件/日历组件/日历.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="812">
+              <caret line="342" column="7" lean-forward="false" selection-start-line="342" selection-start-column="7" selection-end-line="342" selection-end-column="7" />
+              <folding>
+                <marker date="1527497426169" expanded="true" signature="5293:5305" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tab.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js效果/组件/tab组件/tab.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="812">
+              <caret line="107" column="7" lean-forward="false" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,6 +132,12 @@
       <list>
         <option value="$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html" />
         <option value="$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html" />
+        <option value="$PROJECT_DIR$/vue/vue实例.html" />
+        <option value="$PROJECT_DIR$/js效果/组件/tab组件/tab.html" />
+        <option value="$PROJECT_DIR$/js效果/组件/modal组件/modal.html" />
+        <option value="$PROJECT_DIR$/js效果/组件/懒加载/懒加载.html" />
+        <option value="$PROJECT_DIR$/js效果/组件/轮播组件/轮播.html" />
+        <option value="$PROJECT_DIR$/js效果/组件/日历组件/日历.html" />
       </list>
     </option>
   </component>
@@ -71,6 +152,9 @@
     <option name="y" value="264" />
     <option name="width" value="1119" />
     <option name="height" value="656" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -103,7 +187,42 @@
               <item name="JS-note" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS-note" type="462c0819:PsiDirectoryNode" />
               <item name="js效果" type="462c0819:PsiDirectoryNode" />
-              <item name="jQuery" type="462c0819:PsiDirectoryNode" />
+              <item name="组件" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS-note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS-note" type="462c0819:PsiDirectoryNode" />
+              <item name="js效果" type="462c0819:PsiDirectoryNode" />
+              <item name="组件" type="462c0819:PsiDirectoryNode" />
+              <item name="modal组件" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS-note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS-note" type="462c0819:PsiDirectoryNode" />
+              <item name="js效果" type="462c0819:PsiDirectoryNode" />
+              <item name="组件" type="462c0819:PsiDirectoryNode" />
+              <item name="tab组件" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS-note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS-note" type="462c0819:PsiDirectoryNode" />
+              <item name="js效果" type="462c0819:PsiDirectoryNode" />
+              <item name="组件" type="462c0819:PsiDirectoryNode" />
+              <item name="懒加载" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS-note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS-note" type="462c0819:PsiDirectoryNode" />
+              <item name="js效果" type="462c0819:PsiDirectoryNode" />
+              <item name="组件" type="462c0819:PsiDirectoryNode" />
+              <item name="日历组件" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS-note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS-note" type="462c0819:PsiDirectoryNode" />
+              <item name="js效果" type="462c0819:PsiDirectoryNode" />
+              <item name="组件" type="462c0819:PsiDirectoryNode" />
+              <item name="轮播组件" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -122,6 +241,9 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -135,17 +257,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.木桶布局 - 面向对象.html">
+  <component name="RunManager" selected="JavaScript Debug.modal.html">
     <configuration name="木桶布局 - 面向对象.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS-note/js效果/jQuery/木桶布局 - 面向对象.html" />
     <configuration name="返回顶部.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS-note/js效果/返回顶部、/返回顶部.html" />
-    <list size="2">
+    <configuration name="modal.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS-note/js效果/组件/modal组件/modal.html" />
+    <configuration name="vue实例.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS-note/vue/vue实例.html" />
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.返回顶部.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.木桶布局 - 面向对象.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.vue实例.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.modal.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.木桶布局 - 面向对象.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.返回顶部.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.modal.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.vue实例.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.木桶布局 - 面向对象.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.返回顶部.html" />
       </list>
     </recent_temporary>
   </component>
@@ -162,33 +290,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527345575063</updated>
-      <workItem from="1527345576451" duration="1461000" />
+      <workItem from="1527345576451" duration="2657000" />
+      <workItem from="1527485720618" duration="5136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1461000" />
+    <option name="totallyTimeSpent" value="7793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -205,7 +334,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2522">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/返回顶部、/返回顶部.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
           <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -215,10 +364,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js效果/jQuery/木桶布局 - 面向对象.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="52">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/vue实例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="111" column="10" lean-forward="false" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/组件/tab组件/tab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="107" column="7" lean-forward="false" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/组件/modal组件/modal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3646">
+          <caret line="205" column="26" lean-forward="false" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
+          <folding>
+            <marker date="1527497083042" expanded="true" signature="3789:3801" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/组件/懒加载/懒加载.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="146" column="10" lean-forward="true" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/组件/轮播组件/轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="217" column="7" lean-forward="false" selection-start-line="217" selection-start-column="7" selection-end-line="217" selection-end-column="7" />
+          <folding>
+            <element signature="e#2626#2630#1" expanded="true" />
+            <element signature="e#2666#2670#1" expanded="true" />
+            <element signature="e#3479#3483#1" expanded="true" />
+            <element signature="e#3519#3523#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/组件/日历组件/日历.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="342" column="7" lean-forward="false" selection-start-line="342" selection-start-column="7" selection-end-line="342" selection-end-column="7" />
+          <folding>
+            <marker date="1527497426169" expanded="true" signature="5293:5305" ph="..." />
           </folding>
         </state>
       </provider>
