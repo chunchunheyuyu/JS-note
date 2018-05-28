@@ -51,9 +51,10 @@
         <script>
             var mainNode =document.querySelector('main')
             var mainNodeWidth=parseFloat(getComputedStyle(mainNode).width)//窗口宽度
-            var baseHight =200
+            var baseHight =1200
             var rowList =[]//当前一行的图片
             var rowTotalWidth = 0//一行图片总宽
+<<<<<<< HEAD
 
             
             document.body.onresize =throttle(function () {
@@ -79,6 +80,9 @@
             }
             }
             getData('game')
+=======
+            getData('nake')
+>>>>>>> 7b7b500e1e689b048ed57cf4fe8eecf95983aa51
                 .then(render)
                 .catch(function (err) {
                     console.log(err)
@@ -131,7 +135,11 @@
                        key: '9081329-ae9a8758b9e118192c229f289',
                        q: keyword,
                        image_type: 'photo',
+<<<<<<< HEAD
                        per_page: 50
+=======
+                       per_page: 120
+>>>>>>> 7b7b500e1e689b048ed57cf4fe8eecf95983aa51
                    }
                    var url = 'https://pixabay.com/api/?'
                    for (var key in data) {
