@@ -68,7 +68,10 @@
             </todo-item>
         </ol>
     </div>
-
+    <ol>
+        <!-- 创建一个 todo-item 组件的实例 -->
+        <todo-item1></todo-item1>
+    </ol>
     <script>
         var app = new Vue({
             el: '#app',
@@ -139,6 +142,9 @@
                     { id: 2, text: '随便其它什么人吃的东西' }
                 ]
             }
+        })
+        Vue.component('todo-item1', {
+            template: '<li>这是个待办项</li>'
         })
     </script>
 
