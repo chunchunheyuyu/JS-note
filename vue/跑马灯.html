@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .art{
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="button"value="浪起来" @click="move">
+        <input type="button"value="停止" @click="stop">
+
+        <p class="art">{{msg}}</p>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'章鱼玩狐狸，骚是骚的来',
+                clockId:null
+            },
+            methods:{
+                move(){
+                    if(this.clockId!=null)return
+                   this.clockId= setInterval(()=>{
+                        console.log(this.msg)
+                        var start = this.msg.substring(0,1)
+                        console.log(start)
+                        var end = this.msg.substring(1)
+                        console.log(end)
+                        this.msg= end + start
+                    },300)
+
+                },
+                stop (){
+                    clearInterval(this.clockId)
+                    this.clockId=null
+                }
+            }
+
+        })
+
+
+
+
+    </script>
+</body>
+</html>
