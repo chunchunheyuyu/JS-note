@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .inner{
+            height: 150px;
+            background-color: #BB6688;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
-        <div class="inner">
-            <input type="button"value="电他">
+        <div class="inner" @click="divHand">
+            <input type="text" v-model='sss' @click.stop="btnHand">
+            <a href="http://www.baidu.com" @click.prevent="alink">baidu</a>
         </div>
     </div>
+    <script>
+        var vm =new Vue({
+            el:'#app',
+            data:{
+                sss:'54174711'
+            },
+            methods:{
+                divHand(){
+                    console.log('div')
+            },
+                btnHand(){
+                    console.log('btn')
 
+            },
+                alink(){
+                    console.log('23123')
+                }
+        }
+        })
+    </script>
 </body>
 </html>
