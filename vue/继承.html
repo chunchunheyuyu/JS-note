@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function SuperMax (){
+        this.sizes=['88','D','88']
+    }
+    function SuperMedium(){
+        //继承了 SuperMax
+        SuperMax.call(this)
+    }
+    var  SuperSmall =new  SuperMedium()
+    var  SuperSmall2 = new SuperMedium()
+    SuperSmall.sizes.push('back')
+
+    console.log(SuperSmall.sizes)//["88", "D", "88", "back"]
+    console.log(SuperSmall2.sizes)//["88", "D", "88"]
+</script>
+</body>
+</html>
